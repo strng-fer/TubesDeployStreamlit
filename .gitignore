@@ -11,6 +11,6 @@ dist/
 build/
 .env
 .venv
-fix_dataset2.csv
 *.log
 .DS_Store
+QUICKSTART.md
