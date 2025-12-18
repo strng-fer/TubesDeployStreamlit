@@ -1,0 +1,1987 @@
+company_id,company_name,embedding_index
+colgate-palmolive,Colgate-Palmolive,0
+michael-page,Michael Page,1
+shell,Shell,2
+ericsson,Ericsson,3
+bersamabumn,Rekrutmen Bersama BUMN,4
+boston-consulting-group,Boston Consulting Group (BCG),5
+oracle,Oracle,6
+h&m,H&M,7
+exxonmobil,ExxonMobil,8
+procter-and-gamble,Procter & Gamble,9
+siemens,Siemens,10
+openkerja,Lowongan Kerja,11
+shopee,Shopee,12
+danone,Danone,13
+disnakerjacom,DISNAKERJA,14
+british-american-tobacco,BAT,15
+dr--reddys-laboratories,Dr. Reddy's Laboratories,16
+mastercard,Mastercard,17
+pertamina,PT Pertamina (Persero),18
+accenture,Accenture,19
+reckitt,Reckitt,20
+ibm,IBM,21
+robert-walters,Robert Walters,22
+accor,Accor,23
+the-kraft-heinz-company,Kraft Heinz,24
+vmware,VMware,25
+abbvie,AbbVie,26
+puma,PUMA Group,27
+verizon,Verizon,28
+microsoft,Microsoft,29
+riot-games,Riot Games,30
+cargill,Cargill,31
+loker,Loker,32
+pt-indofood-sukses-makmur-tbk,PT Indofood Sukses Makmur Tbk,33
+lazada,Lazada,34
+fortinet,Fortinet,35
+pt-hm-sampoerna-tbk,PT HM Sampoerna Tbk.,36
+tiktok,TikTok,37
+kementerianbumn,Kementerian BUMN,38
+amdocs,Amdocs,39
+igtsolutions,IGT Solutions,40
+first-abu-dhabi-bank,First Abu Dhabi Bank (FAB),41
+pt-djarum,PT DJARUM,42
+pt-tokopedia,PT Tokopedia,43
+pt-frisian-flag-indonesia,PT Frisian Flag Indonesia,44
+vml,VML,45
+paragoncorp,ParagonCorp,46
+arup,Arup,47
+atlas-copco,Atlas Copco,48
+kornferry,Korn Ferry,49
+asus,ASUS,50
+gotogroup,GoTo Group,51
+,Gojek,52
+kantar,Kantar,53
+lg-electronics,LG Electronics,54
+tvs-motor-company,TVS Motor Company,55
+pt-smart-tbk,PT SMART Tbk,56
+beiersdorf,Beiersdorf,57
+lancesoft,"LanceSoft, Inc.",58
+grabapp,Grab,59
+cakapinterview,Info Karir & Magang,60
+remote.com,Remote,61
+tetra-pak,Tetra Pak,62
+airswift,Airswift,63
+mott-macdonald,Mott MacDonald,64
+ifclinkedin,IFC - International Finance Corporation,65
+repsol,repsol,66
+jaringan-loker,Jaringan Loker,67
+loker-utama-indonesia,Loker Utama Indonesia,68
+shangri-la-hotels-and-resorts,Shangri-La Group,69
+yara,Yara International,70
+bankmandiri,PT Bank Mandiri (Persero) Tbk.,71
+superindo,PT Lion Super Indo,72
+pt-sayap-mas-utama,Wings Group Indonesia (Sayap Mas Utama),73
+lowker-migas-dan-energi,Lowker Migas dan Energi,74
+bca,PT Bank Central Asia Tbk (BCA),75
+telekomunikasi-indonesia,Telkom Indonesia,76
+pt-kalbe-farma,"PT Kalbe Farma, Tbk",77
+johnson-controls,Johnson Controls,78
+nes-fircroft,NES Fircroft,79
+pt-bank-negara-indonesia-persero-tbk-,PT. BANK NEGARA INDONESIA (Persero) Tbk.,80
+brunel,Brunel,81
+pt-nippon-indosari-corpindo-tbk,PT Nippon Indosari Corpindo Tbk,82
+asian-paints,Asian Paints,83
+uniqlo,UNIQLO,84
+pt.-astra-international,PT Astra International Tbk,85
+ampstek,Ampstek,86
+melia-hotels-international,Meliá Hotels International,87
+wpp,WPP,88
+perfetti-van-melle,Perfetti Van Melle,89
+mufg,MUFG,90
+jobstreet.co.id,Jobstreet Indonesia,91
+aramex,Aramex,92
+afry,AFRY,93
+jabil,Jabil,94
+acwa-power-international,ACWA Power,95
+nttdata,NTT DATA,96
+lokertambang,Loker Tambang,97
+bbraun-group,B. Braun Group,98
+photon-interactive,Photon,99
+traveloka,Traveloka,100
+pt-industri-kereta-api,PT Industri Kereta Api (Persero) ,101
+stanley-black-decker-inc,"Stanley Black & Decker, Inc.",102
+kearney,Kearney,103
+pt.-mayora-indah-tbk,PT. Mayora Indah Tbk,104
+thermaxlimited,Thermax Limited,105
+nityo-infotech,Nityo Infotech,106
+solvay,Solvay,107
+arla-foods,Arla Foods,108
+lenovo,Lenovo,109
+techolution-mobi,techolution,110
+pt-bukalapak-com,Bukalapak,111
+frieslandcampina,FrieslandCampina,112
+pt.-gudang-garam-tbk,PT. Gudang Garam Tbk,113
+tuvsud,TÜV SÜD,114
+telkomsel,Telkomsel,115
+rothschildandco,Rothschild & Co,116
+ptwijayakaryaperserotbk.,PT Wijaya Karya (Persero) Tbk,117
+uob,UOB,118
+scjohnson,SC Johnson,119
+alfa-laval,Alfa Laval,120
+epsilon,Epsilon,121
+teradata,Teradata,122
+pt-pln-persero-,PT PLN (Persero),123
+yougov,YouGov,124
+cushman-&-wakefield,Cushman & Wakefield,125
+intellect_design_arena,Intellect Design Arena Ltd,126
+sercin,Butuh Kerja,127
+pt-global-tiket-network,Tiket.com (PT. Global Tiket Network),128
+tractebel-engie-group,TRACTEBEL,129
+indosat,PT. Indosat Tbk,130
+kapalapigroup,PT Kapal Api Global,131
+ntt-data-business-solutions,NTT DATA Business Solutions,132
+jumeirah,Jumeirah,133
+metsoofficial,Metso,134
+aurecon,Aurecon,135
+mideagroup,Midea Group,136
+freeport-indonesia,Freeport Indonesia,137
+lokerhotel.com,LokerHotel.com,138
+veeam-software,Veeam Software,139
+appgroupid,APP Group,140
+adportsgroup,AD Ports Group,141
+bsi,BSI,142
+bhel,Bharat Heavy Electricals Limited,143
+pt.-ajinomoto-indonesia,PT. Ajinomoto Indonesia,144
+redbus_2,redBus,145
+firmenich,Firmenich,146
+kawan-lama-group,Kawan Lama Group,147
+black-and-veatch,Black & Veatch,148
+herbalife,Herbalife,149
+pt.-trakindo-utama,PT Trakindo Utama,150
+ptpegadaian,PT. Pegadaian,151
+pt.-garudafood-putra-putri-jaya-tbk,"PT. Garudafood Putra Putri Jaya, Tbk",152
+odoo,Odoo,153
+cimory-group,Cimory Group,154
+kopi-kenangan,Kopi Kenangan,155
+ayoloker,Loker Fresh graduate (Ayoloker)🇮🇩,156
+pt--bank-cimb-niaga-tbk,CIMB Niaga,157
+pt-chandra-asri,PT Chandra Asri Pacific Tbk,158
+pamapersada-nusantara,Pamapersada Nusantara,159
+fti-consulting,FTI Consulting,160
+thiess,Thiess,161
+smbc-indonesia,PT Bank SMBC Indonesia Tbk,162
+ixdf-interaction-design-foundation-school,IxDF - Interaction Design Foundation,163
+pt-sumber-alfaria-trijaya-tbk,"PT. Sumber Alfaria Trijaya, Tbk (Alfamart)",164
+blibli,Blibli,165
+hikvision,Hikvision,166
+,Loker Update,167
+orang-tua-group,Orang Tua Group,168
+pt-bank-rakyat-indonesia-persero-tbk,PT Bank Rakyat Indonesia (Persero) Tbk,169
+manulife-financial,Manulife,170
+sumitomo-mitsui-banking-corporation,SMBC Group,171
+gep-worldwide,GEP Worldwide,172
+lowongankerjaid,Lowongan Kerja,173
+natixis-corporate-investment-banking,Natixis Corporate & Investment Banking,174
+temenos,Temenos,175
+adaroenergy,PT Adaro Energy Indonesia Tbk,176
+summarecon-agung,"PT. Summarecon Agung, Tbk.",177
+,PT Bank BTPN Tbk,178
+kcsoftex,PT. Softex Indonesia,179
+skintificid,SKINTIFIC,180
+orica,Orica,181
+thalesdis,Thales Cyber and Digital ,182
+petrosea,Petrosea,183
+usemultiplier,Multiplier,184
+anaplan,Anaplan,185
+pt-amerta-indah-otsuka,PT. Amerta Indah Otsuka,186
+smec,SMEC,187
+pt.-sasa-inti,PT. Sasa Inti,188
+garena,Garena,189
+vistra,VISTRA,190
+tereos,Tereos,191
+allen-overy,Allen & Overy,192
+white-&-case,White & Case LLP,193
+g-p,G-P,194
+luxasia,LUXASIA,195
+kerry,Kerry,196
+softwareone,SoftwareOne,197
+antlerglobal,Antler,198
+tollgroup,Toll Group,199
+coface,Coface,200
+bank-danamon-indonesia,PT Bank Danamon Indonesia Tbk,201
+insidepmi,Philip Morris International,202
+pairedrecruiting,Paired,203
+philips-lighting,Philips Lighting,204
+erajayaswasembada,"PT. Erajaya Swasembada, Tbk.",205
+r-ga,R/GA,206
+ismayagroup,ISMAYA GROUP,207
+hoganlovells,Hogan Lovells,208
+habitat-for-humanity-international,Habitat for Humanity International,209
+world-resources-institute,World Resources Institute,210
+alamtriresourcesindonesia,PT Alamtri Resources Indonesia Tbk,211
+pt-kobe-boga-utama,PT Kobe Boga Utama,212
+trend-micro,Trend Micro,213
+tso-auto2000,PT Astra International Tbk - TSO Auto2000,214
+fitch-ratings,Fitch Ratings,215
+clickinaja,Lowongan Kerja - Loker | GotoKerja.com,216
+raffles-hotels-&-resorts,Raffles Hotels & Resorts,217
+fordfoundation,Ford Foundation,218
+zalora-sea,ZALORA Group,219
+thesoul-group,TheSoul Group,220
+sun-life-financial,Sun Life,221
+yarabroficial,Yara Brasil,222
+buro-happold,Buro Happold,223
+frostandsullivan,Frost & Sullivan,224
+amman-mineral,PT Amman Mineral Nusa Tenggara,225
+banksinarmas,PT Bank Sinarmas Tbk,226
+keyence,KEYENCE CORPORATION,227
+swatchgroup,Swatch Group,228
+tripcomgroup,Trip.com Group,229
+lemonilo,Lemonilo,230
+jacrecruitment,JAC Recruitment,231
+ocbc-indonesia,OCBC Indonesia,232
+hogarth,Hogarth,233
+pt-elnusa-tbk,PT Elnusa Tbk,234
+ruangguru-com,Ruangguru.com,235
+ptvaleindonesiatbk,PT Vale Indonesia Tbk,236
+pt.-sinar-sosro,PT. Sinar Sosro,237
+synergy-marine,Synergy Marine Group,238
+april,APRIL,239
+flip.id,Flip,240
+linkaja,LinkAja,241
+dana-indonesia,DANA Indonesia,242
+pt-nutrifood-indonesia,Nutrifood,243
+madingloker,Madingloker Official,244
+cermati,cermati.com,245
+the-campbells-company,The Campbell's Company,246
+the-trade-desk,The Trade Desk,247
+pharos-indonesia,PT. Pharos Indonesia,248
+pt-kaldu-sari-nabati-indonesia,PT Kaldu Sari Nabati Indonesia,249
+palladium-positive-impact,Palladium: Make It Possible,250
+prudential-indonesia-pt-prudential-life-assurance-,Prudential Indonesia (PT Prudential Life Assurance),251
+krones,Krones,252
+boyden,Boyden,253
+pz-cussons,PZ Cussons,254
+unit4,Unit4,255
+razer,Razer Inc.,256
+yamaha-corporation,Yamaha Corporation,257
+ares-management,Ares Management,258
+dentons,Dentons,259
+nortonrosefulbright,Norton Rose Fulbright,260
+herbert-smith-freehills,Herbert Smith Freehills,261
+bibit,Bibit.id,262
+sociolla,Sociolla,263
+unitedtractors,PT United Tractors Tbk,264
+os-selnajaya-indonesia,PT OS SELNAJAYA INDONESIA,265
+pt-tempo-scan-pacific-tbk,PT Tempo Scan Pacific Tbk,266
+lpdpri,LPDP Kementerian Keuangan RI,267
+hutamakarya,PT. Hutama Karya (Persero),268
+yusen-logistics-,Yusen Logistics,269
+pt-pertaminahulurokan,PT PERTAMINA HULU ROKAN,270
+pt-brexa-indonesia,PT BREXA Raya Indonesia,271
+bukitmakmurmandiriutama,PT Bukit Makmur Mandiri Utama,272
+redachem,REDA Chemicals,273
+sita,SITA,274
+swift,Swift,275
+nexans,Nexans,276
+olx-group,OLX,277
+indonesia-stock-exchange,Indonesia Stock Exchange,278
+danone-aqua,Danone Aqua,279
+sayurboxofficial,Sayurbox,280
+page-executive,Page Executive,281
+rans-media,RANS Entertainment,282
+idn-media,IDN,283
+japfa-group,JAPFA,284
+great-giant-pineapple,Great Giant Foods,285
+pt-indocement-tunggal-prakarsa-tbk---heidelbergcement-group,PT Indocement Tunggal Prakarsa Tbk. - Heidelberg Materials,286
+reddoorz,RedDoorz,287
+phepertamina,PT Pertamina Hulu Energi,288
+phoenix-contact,Phoenix Contact,289
+gameloft,Gameloft,290
+johnson-matthey,Johnson Matthey,291
+sinar-mas-land,Sinar Mas Land,292
+braze,Braze,293
+jakartakerja,JakartaKerja | Loker Jakarta,294
+brinks,Brink’s Inc,295
+shinto-kogyo-indonesia-pt,PT. Shinto Kogyo Indonesia,296
+r-systems,R Systems,297
+kalbeconsumerhealth,Kalbe Consumer Health,298
+seagrp,Sea,299
+vlink-inc,VLink Inc,300
+west-emerson-engineering,Indonesia Career,301
+bank-syariah-indonesia,PT Bank Syariah Indonesia Tbk.,302
+career-indomaret-group,Indomaret Group,303
+siloamhospitalsgroup,Siloam Hospitals Group,304
+ajaib-id,Ajaib,305
+beautyhaul,Somethinc - BeautyHaul,306
+ingenico,Ingenico,307
+pt-salam-pacific-indonesia-lines,PT Salam Pacific Indonesia Lines,308
+glints,Glints,309
+we-are-social,We Are Social,310
+savinodelbene,Savino Del Bene,311
+australian-trade-commission,Australian Trade and Investment Commission (Austrade),312
+haskoning,Haskoning,313
+sealed-air-corporation,Sealed Air Corporation,314
+visionetinternasional,OVO (PT Visionet Internasional),315
+info-rekrutmen-terbaru,Info Rekrutmen Terbaru,316
+karlstorz,KARL STORZ,317
+fosroc,Fosroc,318
+gotokerja,Info Loker Terbaru,319
+monroe-consulting-group,Monroe Consulting Group,320
+tuv-rheinland-group,TÜV Rheinland Group,321
+iffco,IFFCO Group,322
+peri,PERI,323
+loker-indo,Lokerindo.ID,324
+pwc_indonesia,PwC Indonesia,325
+capillary-technologies,Capillary Technologies,326
+loker-hotelier,"LokerHotelier.com - Lowongan Kerja Hotel, Resort, Villa, Restaurant, Spa & Gym",327
+pt--bank-tabungan-negara-persero-tbk,PT. Bank Tabungan Negara,328
+meratusgroup,Meratus Group,329
+job.id,job.id,330
+putra-perkasa-abadi,Putra Perkasa Abadi,331
+bausch-&-lomb,Bausch + Lomb,332
+qad,QAD,333
+tospeople,TOS People,334
+pt-bank-mega-tbk.,Bank Mega,335
+avl,AVL,336
+thebimengineers,The BIM Engineers,337
+rekrutmenbersamabumn,Rekrutmen Bersama BUMN,338
+qualitykiosk-technologies,QualityKiosk Technologies,339
+hb-fuller,H.B. Fuller,340
+epson-indonesia,Epson Indonesia,341
+vivoindonesia,vivo Indonesia ,342
+alterraindonesia,Alterra Indonesia,343
+amorepacific,AMOREPACIFIC,344
+gotokerjadotcom,Loker - Lowongan Kerja Indonesia,345
+netcore-cloud,Netcore Cloud,346
+accenture-sea,Accenture Southeast Asia,347
+hr-path,HR Path,348
+saptaindrasejati-sis,PT Saptaindra Sejati (SIS),349
+hoteljob-id,hoteljob.id - Hotel Job Indonesia,350
+biomerieux,bioMérieux,351
+apl-logistics,APL Logistics,352
+asian-agri,Asian Agri,353
+fujielectric-com,"Fuji Electric Co., Ltd.",354
+pt-kinoindonesiatbk,PT Kino Indonesia Tbk,355
+moladin,Moladin,356
+applus-asia-middle-east-and-africa,Applus+ Asia Middle East and Africa,357
+medco-e&p-indonesia,Medco E&P Indonesia,358
+scarlett-indonesia,Scarlett Indonesia,359
+dunia-loker,DUNIA LOKER,360
+pertamina-nre,Pertamina New & Renewable Energy,361
+pt-astra-honda-motor,PT Astra Honda Motor,362
+cpnsindonesia,CPNS INDONESIA,363
+yellowdotai,Yellow.ai,364
+amartha,Amartha Financial,365
+arthur-d--little,Arthur D. Little,366
+aci-worldwide,ACI Worldwide,367
+sinarmas,Sinar Mas,368
+john-cockerill,John Cockerill,369
+viseo,VISEO,370
+cartrack,Cartrack,371
+mining-career,"Mining Career (Oil, Gas, Energy and EPC)",372
+pertamina-ep,PERTAMINA EP,373
+endress-hauser-group,Endress+Hauser Group,374
+pt--tripatra-engineers-and-constructors,TRIPATRA,375
+pt-solusi-energy-nusantara,PT Solusi Energy Nusantara,376
+pt-apl-zuellig-pharma-company-,PT Anugerah Pharmindo Lestari,377
+devere-group,deVere Group,378
+antam,PT ANTAM Tbk,379
+deptagency,DEPT®,380
+jd-id,JD.ID,381
+essence,Essence,382
+inchcape-shipping-services,Inchcape Shipping Services,383
+securitas-group,Securitas Group,384
+designbridgeandpartners,Design Bridge and Partners,385
+sofrecom,Sofrecom,386
+infobip,Infobip,387
+engineeringjobsid,engineeringjobs.id,388
+teads,Teads,389
+pt-merdeka-copper-gold-tbk,PT Merdeka Copper Gold Tbk,390
+futurepipeindustries,Future Pipe Industries,391
+deliveree-on-demand-logistics-southeast-asia,Deliveree On-Demand Logistics (Southeast Asia),392
+climate-policy-initiative,Climate Policy Initiative,393
+clsa,CLSA,394
+pt-bank-muamalat-indonesia-tbk,PT Bank Muamalat Indonesia Tbk,395
+wijaya-karya-beton-pt,PT Wijaya Karya Beton Tbk.,396
+shopback,ShopBack Indonesia,397
+,DNV - Energy Systems,398
+thedarwinbox,Darwinbox,399
+bcadigital,PT Bank Digital BCA (BCA Digital),400
+mapgroupasia,MAP Group Asia,401
+maybank-investment-banking-group,Maybank Investment Banking Group,402
+transtv,TRANS TV,403
+waskitakarya,PT Waskita Karya (Persero) Tbk,404
+viventis-search-asia,Viventis Search Asia,405
+nexteer-automotive,Nexteer Automotive,406
+tamansafariindonesia,Taman Safari Indonesia,407
+east-west-seed,East-West Seed,408
+jgc,JGC,409
+dfi-retail-group,DFI Retail Group,410
+workplace-options,Workplace Options,411
+aoshearman,A&O Shearman,412
+kpmg-indonesia,KPMG Indonesia,413
+solugenix,Solugenix,414
+golin,Golin,415
+aspireapp-global,Aspire,416
+pt.-kimia-farma-tbk,"PT. KIMIA FARMA, TBK",417
+sinar-mas-mining,Sinarmas Mining,418
+nufarm,Nufarm,419
+kordsa,Kordsa,420
+zenoti,Zenoti,421
+superapp-id,SuperApp (YC W18),422
+bluebirdgroup,Blue Bird Group,423
+cotton-on-group,Cotton On Group,424
+moontongames,MOONTON GAMES,425
+pt-kilang-pertamina-balikpapan,PT Kilang Pertamina Balikpapan,426
+merdekabatterymaterials,PT Merdeka Battery Materials Tbk,427
+cinepolisjobsglobal,Cinépolis,428
+kuaishou,Kuaishou Technology,429
+apical-group,Apical,430
+inkerja,INKERJA Informasi Lowongan Kerja Indonesia,431
+pt-mowilex,PT. Mowilex,432
+vindes,Vindes Corp,433
+dexa-medica,Dexa Medica (Member of Dexa Group),434
+diamond-cold-storage,PT Sukanda Djaya - Diamond Cold Storage,435
+pt-hasnur-riung-sinergi,PT. HASNUR RIUNG SINERGI,436
+lokerkimia,LokerKimia.ID,437
+hseupdate,HSE Update,438
+aptar,Aptar,439
+hh-global,HH Global,440
+pt-bank-jago-tbk,PT Bank Jago Tbk,441
+sig-id,SIG,442
+pt-astra-agro-lestari-tbk,"PT. Astra Agro Lestari, Tbk",443
+kementerian-keuangan-republik-indonesia,Kementerian Keuangan Republik Indonesia,444
+toyo-denso-indonesia-pt,"TOYO DENSO INDONESIA, PT",445
+ditjenpajakri,Direktorat Jenderal Pajak,446
+permatabank,Permata Bank,447
+smartfren-telecom,PT Smartfren Telecom Tbk,448
+beraucoalenergy,Berau Coal,449
+garuda-indonesia,Garuda Indonesia,450
+vopak,Vopak,451
+m-c-saatchi-performance,M+C Saatchi Performance,452
+aia_indonesia,AIA Indonesia,453
+mceasy,McEasy,454
+klook,Klook,455
+beca,Beca,456
+kompas-gramedia,KOMPAS GRAMEDIA,457
+rocketindo,Rocketindo,458
+pt-rans-nikmat-sejahtera,PT. RANS Nikmat Sejahtera,459
+ayana-resort-and-spa-bali,AYANA Hospitality,460
+indonesia-financial-group-ifg,Indonesia Financial Group (IFG),461
+pt.-surya-madistrindo,PT. SURYA MADISTRINDO,462
+chr-hansen-as,Chr. Hansen,463
+techconnectid,TechConnect,464
+pt-metaforsa-mulia-internasional,PT MEMI,465
+kanmo-group,Kanmo Group,466
+lintasarta,Lintasarta,467
+efisheryid,eFishery,468
+mapactiveasia,MAP Active Asia,469
+lottechemicalindonesia,PT LOTTE Chemical Indonesia,470
+funding-societies-modalku,Funding Societies | Modalku Group,471
+anblicks,Anblicks,472
+credgenics,Credgenics,473
+cnn-indonesia,CNN Indonesia,474
+dubai-investment-fund,Dubai Investment Fund (DIF),475
+pt-pgn-lng-indonesia,PT PGN LNG Indonesia,476
+ptpp,PT PP (Persero) Tbk,477
+deloittelegal,Deloitte Legal,478
+homecreditindonesia,Home Credit Indonesia,479
+pagegroup,PageGroup,480
+rahi-systems,Rahi,481
+shipsy,Shipsy,482
+dfs-group-limited,DFS Group Limited,483
+pt-adhi-karya-persero-tbk.,PT Adhi Karya (Persero) Tbk.,484
+carousellgroup,Carousell Group,485
+bumitama,PT Bumitama Gunajaya Agro (BGA Group),486
+jawa-satu-power-pt,"Jawa Satu Power, PT",487
+apco-worldwide,APCO,488
+lowongan-kerja-id,Lowongan Kerja,489
+schroders,Schroders,490
+fore-coffee,Fore Coffee,491
+pt-arta-boga-cemerlang-orang-tua-group,PT. Arta Boga Cemerlang (Orang Tua Group),492
+beldeninc,Belden Inc.,493
+tabsquare-pte-ltd,TabSquare.AI,494
+msx-international,MSX International,495
+bvlgari-hotels-and-resorts,Bvlgari Hotels & Resorts,496
+duakelinci,PT Dua Kelinci,497
+pt-donggi-senoro-lng,PT Donggi-Senoro LNG,498
+peoplyee,Peoplyee,499
+byorange,byOrange,500
+juloindonesia,JULO,501
+hrs-hospitality-and-retail-systems,HRS Hospitality & Retail Systems,502
+mayapada-hospital,Mayapada Hospital,503
+gofluent,goFLUENT,504
+cgg,CGG,505
+pegipegi,Pegipegi,506
+wismilakintimakmurtbk,"PT. Wismilak Inti Makmur, Tbk.",507
+doitintl,DoiT,508
+wsbp,PT Waskita Beton Precast Tbk,509
+ptlinknettbk,PT Link Net Tbk,510
+convergint-asia-pacific,Convergint Asia Pacific,511
+protelindo-pt,"Protelindo, PT",512
+scan-global-logistics,Scan Global Logistics,513
+decagroup,"DECA Group (Whitelab, Bonavie, Goute, Everpure, White Story, Trueve)",514
+pt-bukit-asam-tbk,PT Bukit Asam Tbk,515
+pt-gajah-tunggal-tbk-jakarta-indonesia,"PT. GAJAH TUNGGAL, Tbk",516
+yinson-holdings-berhad,Yinson,517
+byd-indonesia,BYD Indonesia,518
+rcti,RCTI (Rajawali Citra Televisi Indonesia),519
+badaklng,Badak LNG,520
+ciptakridatama,PT Cipta Kridatama,521
+elnusa-petrofin,Elnusa Petrofin,522
+howden,"Howden, A Chart Industries Company",523
+archroma,Archroma,524
+ramco-systems,Ramco Systems,525
+fives,Fives,526
+shipper-indonesia,Shipper,527
+jiwagroup,Jiwa Group (Kopi Janji Jiwa),528
+pt.-duta-visual-nusantara-tivi-tujuh-trans7-,PT. Duta Visual Nusantara Tivi Tujuh (TRANS7),529
+rgf-international-recruitment,RGF International Recruitment,530
+akrcorporindo,"PT. AKR Corporindo, Tbk",531
+seabank-indonesia,SeaBank Indonesia,532
+brightstar,Brightstar Corp.,533
+nimbusmarinegroup,Nimbus Marine Group,534
+pt--kereta-api-indonesia-persero-,PT Kereta Api Indonesia (Persero),535
+pizzahutindonesia,PT. Sarimelati Kencana Tbk.,536
+paramount-enterprise,PT Paramount Enterprise International,537
+pt-net-mediatama-indonesia,MDTV MEDIA TELEVISI,538
+nextwave-partners,Atlas NextWave,539
+detik-com,detikcom,540
+,BBVA Corporate & Investment Banking,541
+the-asean-secretariat,The ASEAN Secretariat,542
+itmg,"PT Indo Tambangraya Megah, Tbk",543
+pt-korea-tomorrow-global-indonesia,PT Korea Tomorrow & Global TSPM,544
+pt--rekayasa-industri_2,PT. Rekayasa Industri,545
+glico-wings,PT Glico Wings,546
+advanceai-aai,ADVANCE.AI,547
+pt-meindo-elang-indah,PT. Meindo Elang Indah,548
+pln-indonesia-power,PLN Indonesia Power,549
+adira,Adira Finance,550
+meinhardt-group,Meinhardt Group,551
+jgc-indonesia,PT. JGC Indonesia,552
+sirclo,SIRCLO,553
+panasonic-manufacturing-indonesia,PT Panasonic Manufacturing Indonesia,554
+andritz-hydro,ANDRITZ Hydro,555
+archipelago-international,Archipelago International,556
+female-daily,Female Daily Network,557
+affle,Affle,558
+pt-rmk-energy,PT RMK Energy Tbk,559
+aryanoble,Arya Noble,560
+kaizen-institute,Kaizen Institute Global,561
+neptune-energy,Neptune Energy,562
+zilingo,Zilingo,563
+young-living-essential-oils,Young Living Essential Oils,564
+tate-lyle,Tate & Lyle,565
+alam-sutera,PT Alam Sutera Realty Tbk.,566
+pt-krama-yudha-tiga-berlian-motors,PT. Krama Yudha Tiga Berlian Motors,567
+center-for-international-forestry-research,Pusat Penelitian Kehutanan Internasional (CIFOR),568
+sunpride,PT. Sewu Segar Nusantara,569
+milliman,Milliman,570
+sicepat-ekspres-indonesia,SICEPAT EKSPRES INDONESIA,571
+sleekflow,SleekFlow,572
+ocs-global,OCS,573
+ultrasakti,PT Ultra Sakti,574
+tokiomarine,Tokio Marine Insurance Group (Asia),575
+karirpedia,Karirpedia,576
+mobileum,Mobileum,577
+pt.-mrt-jakarta,PT. MRT Jakarta,578
+lokernas,Lokernas.com,579
+hemmersbach,Hemmersbach,580
+rukita,Rukita,581
+shareit-technologies-co-ltd,SHAREit Group,582
+sicpa,SICPA,583
+pt-bank-neo-commerce-tbk,PT Bank Neo Commerce Tbk,584
+btiex,BTI Executive Search,585
+pt-asahimas-chemical,PT Asahimas Chemical,586
+pt--global-jet-express-j&t-express-,PT. Global Jet Express (J&T Express),587
+iris,Iris,588
+classpass,ClassPass,589
+enbonleddisplay,Enbon,590
+lokernusantaraid,Loker Nusantara,591
+pt-kideco-jaya-agung-subsidiary-of-pt-indika-energy-tbk,"PT Kideco Jaya Agung, Member of Indika Energy Group",592
+pt-xl-smart-tbk,PT XLSMART Telecom Sejahtera Tbk,593
+intrias-mandiri-sejati-pt,Intrias Mandiri Sejati,594
+mekari,Mekari,595
+lippo-group,"PT. Lippo Karawaci, Tbk",596
+kapturecx,Kapture CX,597
+astrafinancial,Astra Financial Indonesia,598
+gotologistics,GoTo Logistics,599
+mpmgroup,MPM Group (PT Mitra Pinasthika Mustika Tbk),600
+musashi-auto-parts-indonesia,PT. Musashi Auto Parts Indonesia,601
+pt-pertamina-hulu-indonesia,PT Pertamina Hulu Indonesia,602
+arcadia-us,Arcadia,603
+industrial-workers-federation,Palm Oil and Foresty Career,604
+rspondokindah,Rumah Sakit Pondok Indah Group,605
+robertet-group,Robertet Group,606
+mamikos,Mamikos,607
+privy-id,Privy,608
+azentio,Azentio,609
+aisan-nasmoco-industri-pt,"AISAN NASMOCO INDUSTRI, PT",610
+iswari-interior,Iswari Interior,611
+viseo-asia,VISEO ASIA,612
+pt-astra-otoparts-tbk,PT ASTRA OTOPARTS Tbk,613
+pedersen-and-partners,Pedersen & Partners,614
+polytama,PT Polytama Propindo,615
+pt-mandiri-tunas-finance,Mandiri Tunas Finance,616
+indicocompany,INDICO by Telkomsel,617
+xiaomiindonesia,Xiaomi Indonesia,618
+ciputra-group,Ciputra Group,619
+zealholdings,Zeal Group,620
+bank-commonwealth,Commonwealth Bank Indonesia,621
+dominion-tecnologias,DOMINION GLOBAL,622
+wearemakerlab,Maker Lab,623
+etraining-idx,eTraining.id | eTraining Indonesia (official),624
+syntekotomasi,Syntek Energy & Control,625
+fptsoftwarecareer,FPT Software Career,626
+soechi-group,PT. Soechi Lines Tbk,627
+ansafintiresources,PT. Ansaf Inti Resources,628
+evermos,Evermos,629
+anymindgroup,AnyMind Group,630
+mitsubishi-power,Mitsubishi Power,631
+kumparan,kumparan,632
+monty-mobile,Monty Mobile,633
+shlglobal,SHL,634
+novell-pharmaceutical-laboratories,Novell Pharmaceutical Laboratories,635
+adaro-metcoal-companies,Adaro MetCoal (subsidiary of PT Adaro Energy Tbk group),636
+pt-mineralalamabadi,Mineral Alam Abadi Group,637
+propertyguru,PropertyGuru Group,638
+mining-industry-indonesia,Mining Industry Indonesia,639
+pwc-south-east-asian-consulting,PwC South East Asia Consulting,640
+boopin,Boopin,641
+etex,Etex,642
+canda-sourcing,C&A Sourcing Jobs Asia,643
+acommerce,aCommerce,644
+bank-saqu,Bank Saqu,645
+roundtable-on-sustainable-palm-oil-rspo,Roundtable on Sustainable Palm Oil (RSPO),646
+fit-hub-id,FIT HUB,647
+focuskerja,focuskerja.com | Info lowongan kerja,648
+indodana,Indodana,649
+asia-pacific-rayon,Asia Pacific Rayon (APR),650
+datalogic,Datalogic,651
+lenzinggroup,Lenzing Group,652
+clpsglobal,CLPS Global,653
+central-bank-of-indonesia,Central Bank of Indonesia,654
+pt.-kaltim-prima-coal,PT. Kaltim Prima Coal,655
+xendit,Xendit,656
+indoramacorp,Indorama Corporation,657
+hyperverge,HyperVerge,658
+duniahr-com,DuniaHR.com,659
+synergy-engineering,Synergy Engineering,660
+pt.-samudera-indonesia-ship-management,PT Samudera Indonesia Ship Management,661
+pt-avia-avian,PT Avia Avian Tbk. (Avian Brands),662
+shopline,SHOPLINE,663
+pt-perusahaan-industri-ceres,PT Perusahaan Industri Ceres,664
+ptmustikaratutbk,PT Mustika Ratu Tbk,665
+wetv-sea,WeTV SEA,666
+mantappucorp,Mantappu Corp.,667
+lifeatrohtoid,PT. Rohto Laboratories Indonesia,668
+pt-bank-raya-indonesia-tbk,PT Bank Raya Indonesia Tbk.,669
+pt-sampoerna-agro-tbk,PT Sampoerna Agro Tbk,670
+lingoace,LingoAce,671
+otoritas-jasa-keuangan,Otoritas Jasa Keuangan,672
+pt-united-family-food,PT. United Family Food (Unifam),673
+pt-denso-indonesia,PT Denso Indonesia,674
+pt--tiki-jalur-nugraha-ekakurir-jne-,PT. Tiki Jalur Nugraha Ekakurir (JNE),675
+takasago,Takasago International Corporation,676
+pt-keva-cosmetics-internasional,ESQA,677
+elabram-group,Elabram Group,678
+lowongan-bank-lembaga-keuangan,Lowongan Bank & Lembaga Keuangan,679
+duniatambang-co-id,Dunia Tambang Media,680
+tech-in-asia-indonesia,Tech in Asia Indonesia,681
+blp-beauty,BLP Beauty,682
+cladtek,Cladtek,683
+smoore-technology-indonesia,Smoore Technology Indonesia,684
+sarimurnigroup,Sari Murni Group,685
+pt-intikom-berlian-mustika,PT. Intikom Berlian Mustika,686
+pt-pertamina-hulu-mahakam,PT Pertamina Hulu Mahakam,687
+pt-gondowangi-tradisional-kosmetika,PT Gondowangi,688
+pt-nojorono-tobacco-international,PT Nojorono Tobacco International,689
+pt-perusahaan-gas-negara-tbk,PT Perusahaan Gas Negara Tbk,690
+qoala,Qoala,691
+dicoding,Dicoding Indonesia,692
+pt-navya-retail-indonesia,PT. Navya Retail Indonesia,693
+sensient,Sensient Technologies Corporation,694
+ptbank-amar-indonesia-tbk,Amar Bank,695
+morula-ivf-jakarta,Morula IVF Indonesia (PT. Morula Indonesia),696
+pt.-madhani-talatah-nusantara,PT. Madhani Talatah Nusantara,697
+axiatadigitallabsatthelab,Axiata Digital Labs,698
+ultravoucher,Ultra Voucher,699
+oriflame,Oriflame Cosmetics,700
+shell-infotech,Shell Infotech,701
+volex,Volex,702
+reptbattero,REPT BATTERO,703
+ptnhm,PT Nusa Halmahera Minerals,704
+tarumanagara-foundation,Tarumanagara Foundation,705
+sucofindo,Sucofindo,706
+belimo,Belimo,707
+panin-dai-ichi-life,Panin Dai-ichi Life,708
+gilat-satellite-networks,Gilat Satellite Networks,709
+worldfirst,WorldFirst,710
+greatfrontend,GreatFrontEnd,711
+pt-ultra-prima-abadi-orang-tua-group,PT. Ultra Prima Abadi (Orang Tua Group),712
+engie-impact,ENGIE Impact,713
+pt-timas-suplindo,PT Timas Suplindo,714
+infracloudio,InfraCloud Technologies - An Improving Company,715
+uzmagroup,Uzma Group,716
+pt--astra-daihatsu-motor,PT. Astra Daihatsu Motor,717
+lokerjogjaid,Loker Jogja ID,718
+medco-power-indonesia,Medco Power Indonesia,719
+hexamatics,Hexa Business ,720
+wearemci,MCI,721
+hukumonline.com,Hukumonline.com,722
+fl-technics,FL Technics,723
+bumiresourcesminerals,PT Bumi Resources Minerals Tbk,724
+gradiant-corporation,Gradiant,725
+abeamconsultingid,ABeam Consulting Indonesia,726
+magang-info,Magang Info_,727
+pt-acak-samudera-indonesia,PT Acak Samudera Indonesia,728
+soho-global-health,SOHO Global Health,729
+bkp-btr,Wetar Copper Mine,730
+avia-solutions-group,Avia Solutions Group,731
+modenagroup,MODENA,732
+wings-group-surabaya,Wings Group Surabaya,733
+harian-kompas,Harian Kompas,734
+triputra-group,Triputra Group,735
+coral-guardian,Coral Guardian,736
+taspen,PT TASPEN (Persero),737
+bank-sahabat-sampoerna,Bank Sahabat Sampoerna,738
+starenergygeothermal,Star Energy Geothermal,739
+makino-asia,Makino Asia Group,740
+ayoconnect,Ayoconnect,741
+wiproconsumercare,Wipro Consumer Care and Lighting,742
+dekoruma,Dekoruma,743
+pt-hebe-beauty-style,Hebe Beauty Indonesia,744
+peoplehum,peopleHum,745
+wego-com,Wego.com,746
+eka-hospital,Eka Hospital,747
+kintetsu-world-express,Kintetsu World Express,748
+interplex,Interplex,749
+pt-bakrie-sumatera-plantations-tbk,PT Bakrie Sumatera Plantations Tbk,750
+bolttech,bolttech,751
+forbesmarshall,Forbes Marshall,752
+suparma-pt-tbk,"SUPARMA, PT TBK",753
+ptimplorasuksesabadi,PT Implora Sukses Abadi,754
+pt-pangan-sehat-sejahtera,KIMBO.Idn,755
+teleport-it,Teleport,756
+kompas-tv,KOMPAS TV,757
+pt-agung-podomoro-land-tbk,"PT Agung Podomoro Land, Tbk",758
+pt-matsuo-precision-indonesia,PT MATSUO PRECISION INDONESIA,759
+lrqa,LRQA,760
+swisscontact,Swisscontact,761
+thealchemygroup,Alchemy Group,762
+kgis,KG Invicta Services (KGiS),763
+life-science-with-bio-boss,Life Science with Bio Boss,764
+best-agro-international,Best Agro International,765
+ola-chat-official,Ola Chat,766
+ninjaxpress,Ninja Xpress,767
+pt.tower-bersama-group,Tower Bersama Group,768
+hoerbiger,HOERBIGER,769
+lunoglobal,Luno,770
+pt-eka-jaya-internasional,Eka Jaya Group,771
+horizons-eor,Horizons,772
+bfi-finance-indonesia,"PT BFI Finance Indonesia, Tbk",773
+pt-lautan-luas-tbk,PT Lautan Luas Tbk,774
+servcorp,Servcorp,775
+sumitomo-electric,Sumitomo Electric,776
+inspiraenterprise,Inspira Enterprise,777
+pt-sariguna-primatirta-tbk-tanobel-food-,Tanobel (PT Sariguna Primatirta Tbk),778
+growwithkapalapi,PT SANTOS JAYA ABADI (Kapal Api Global),779
+xoxoday,Xoxoday,780
+hongkong-land,Hongkong Land Limited,781
+mnctv,MNCTV,782
+ngejobs,Lowongan Kerja | ngejobs.com,783
+talentvis,Talentvis,784
+modinity,Modinity,785
+mcgroupglobal,mc Group,786
+pt-geo-dipa-energi-persero-,PT Geo Dipa Energi (Persero),787
+ensign-infosecurity,Ensign InfoSecurity,788
+ioc-unesco,UNESCO Ocean,789
+finaccel-pte-ltd,FinAccel,790
+pt-darma-henwa-tbk,"PT Darma Henwa, Tbk",791
+medco-energi-international-tbk,PT Medco Energi Internasional Tbk,792
+pt-bara-indah-sinergi-group,BARA INDAH SINERGI GROUP,793
+olympus-marine-services,OLYMPUS Marine Services,794
+mrdiyindonesia,MR DIY Indonesia,795
+justco,JustCo,796
+pt-temas-tbk,PT TEMAS Tbk.,797
+synpulsemc,Synpulse,798
+msi-micro-star-international-co-ltd.,MSI,799
+paolo-casula,paolocasula.com,800
+coralreefalliance,Coral Reef Alliance,801
+med-el,MED-EL,802
+unox-spa,UNOX S.p.A.,803
+agrobogautamaofficial,PT. Agro Boga Utama,804
+henley-partners,Henley & Partners - The Firm of Global Citizens®,805
+,Oracle Customer Experience,806
+rekruter-indonesia-bersatu,Rekruter Indonesia Bersatu,807
+ptsmi,PT Sarana Multi Infrastruktur (Persero),808
+pt-indexim-coalindo,PT Indexim Coalindo,809
+iwip-official,Indonesia Weda Bay Industrial Park (IWIP),810
+pt-mifx,MIFX,811
+,Oracle AI Database,812
+moengage,MoEngage,813
+oppoindonesia,OPPO Indonesia,814
+santa-fe-relocation,Santa Fe Relocation,815
+pt-ultrajaya,PT Ultrajaya,816
+hfw,HFW,817
+tanihub,TaniHub,818
+bogagroup,Boga Group,819
+lokernesia-id,Lokernesia.id,820
+indonesiadefenceservices,Indonesia Defence Services,821
+business-experts-mea,Business Experts MEA LLC - Microsoft Solutions Partner,822
+pt--sari-coffee-indonesia,PT. Sari Coffee Indonesia (Starbucks Indonesia),823
+combiphar,COMBIPHAR,824
+prakasa-triputra-solusi,Praktis,825
+anchanto,Anchanto,826
+headhunter-indonesia,Headhunter: Indonesia®,827
+kompas-com,Kompas.com,828
+bpmigas,BPMIGAS,829
+agincourtresources,Agincourt Resources,830
+ptkybi-kayaba-indonesia,PT KAYABA INDONESIA,831
+esco-group-llc,ESCO Group LLC,832
+bumisuksesindo,PT Bumi Suksesindo,833
+bangkit-academy,"Bangkit led by Google, Goto, and Traveloka",834
+bankuniversalbpr,Bank Universal BPR,835
+jetcommerceglobal,Jet Commerce,836
+pt-realco-winta-indonesia,RealCo Indonesia,837
+pt-halmahera-sukses-mineral,Halmahera Sukses Mineral,838
+metrohmhq,Metrohm,839
+hotelierindo,Hotelier Indonesia,840
+sysmex-asia-pacific,Sysmex Asia Pacific,841
+applus-oilandgas,Applus+ Oil and Gas,842
+fsc-international-bonn,Forest Stewardship Council,843
+javaoffshore,Java Offshore,844
+hrnetone,HRnetOne,845
+lgb2bindonesia,LG B2B Indonesia,846
+blackmores,Blackmores Group,847
+kkday,KKday,848
+saint-gobain-indonesia,Saint-Gobain Indonesia,849
+okejobs,OkeJobs,850
+the-travel-corporation,The Travel Corporation,851
+bdx-data-centers,BDx Data Centers,852
+partnersinperformance,"Partners in Performance, Part of Accenture",853
+paxel-co,Paxel Indonesia,854
+tuv-rheinland-asia,TÜV Rheinland Asia,855
+intiland-development,PT Intiland Development Tbk,856
+sperton,SPERTON - Where Great People Meet,857
+sekolahmu,Sekolah.mu,858
+boccard,Boccard,859
+vvf-ltd-,VVF Group,860
+accordinnovations,Accord Innovations,861
+hmclause,HM.CLAUSE,862
+smartpath-id,SmartPath,863
+pt-eden-pangan-indonesia,EdenFarm,864
+wwf-indonesia,WWF Indonesia,865
+bo-le-associates_2,Bo Le Associates,866
+pt-halmahera-persada-lygend-hpal,PT Halmahera Persada Lygend (HPAL),867
+pakuwonjati,PT. Pakuwon Jati Tbk,868
+pt-dharma-satya-nusantara-tbk,PT Dharma Satya Nusantara Tbk,869
+alfagomma,ALFAGOMMA Group,870
+pt-hengjaya-mineralindo-subsidiary-of-nickel-industries-limited,PT Hengjaya Mineralindo (A subsidiary of Nickel Industries Limited),871
+pt-enseval-putera-megatrading-tbk,PT.Enseval Putera Megatrading Tbk,872
+asean-foundation,ASEAN Foundation,873
+hexinggroup,Hexing Group,874
+populix,Populix,875
+waruna-group,Waruna Shipping Group,876
+protect-group,Protect Group,877
+sms-india-pvt.-ltd.,SMS group India,878
+cretivox,Cretivox,879
+rctiplus,RCTI+,880
+pt-pembiayaan-digital-indonesia-adakami,PT Pembiayaan Digital Indonesia (AdaKami),881
+pt-bintang-toedjoe,PT Bintang Toedjoe,882
+riungmitralestari,PT Riung Mitra Lestari,883
+telkomsigma,PT. Sigma Cipta Caraka (Telkomsigma),884
+pt-merdeka-tsingshan-indonesia,PT Merdeka Tsingshan Indonesia,885
+pt-citra-borneo-indah,Citra Borneo Indah (CBI Group),886
+pricollimited,Pricol Limited,887
+pt-imip,PT INDONESIA MOROWALI INDUSTRIAL PARK (IMIP),888
+halodoc-id,Halodoc,889
+potret-tambang,sudut.tambang,890
+ftl-gym,FTL Gym,891
+coda,Coda,892
+darya-varia,PT Darya - Varia Laboratoria Tbk,893
+pax8,Pax8,894
+mobisy-technologies-pvt-ltd,Bizom,895
+satu-persen-indonesian-life-school,Satu Persen - Indonesian Life School,896
+wulingmotorsindonesia,Wuling Motors Indonesia,897
+dhi,DHI,898
+mcclabel,MCC Label,899
+pt-astra-land-indonesia,PT Astra Land Indonesia,900
+bussan-auto-finance,PT Bussan Auto Finance,901
+infomedianusantara,PT. INFOMEDIA NUSANTARA,902
+multi-bintang-indonesia,Multi Bintang Indonesia,903
+connect-energy-services,Connect Energy,904
+pt-niramas-utama-inaco-recruitment,Recruitment PT. Niramas Utama (INACO),905
+pt-buana-lintas-lautan-tbk,PT Buana Lintas Lautan Tbk,906
+pt-bungasari-flour-mills-indonesia,PT Bungasari Flour Mills Indonesia,907
+qapita,Qapita,908
+fhcibumn,Forum Human Capital Indonesia,909
+pajakku,Pajakku,910
+societe-generale-assurances,Société Générale Assurances,911
+agung-sedayu-group,Agung Sedayu Group,912
+pt-citra-palu-mineral,PT Citra Palu Minerals,913
+solarvest,Solarvest,914
+pt-pertamina-geothermal-energy,PT Pertamina Geothermal Energy Tbk,915
+the-jakarta-post,The Jakarta Post,916
+asian-technology-solutions,Asian Technology Solutions,917
+angkasa-pura-airports,Angkasa Pura | Airports,918
+isuzu-astra-motor-indonesia,PT Isuzu Astra Motor Indonesia,919
+about-hse,About HSE,920
+langham-hospitality-group,Langham Hospitality Group,921
+admin-hse,Admin HSE,922
+suzukiindonesia,PT. Suzuki Indomobil Motor,923
+bank-mayapada-int.-tbk.,Bank Mayapada Int. Tbk.,924
+pt-hutchison-3-indonesia,Hutchison 3 Indonesia,925
+kalbe-nutritionals,Kalbe Nutritionals (PT Sanghiang Perkasa),926
+schott-pharma,SCHOTT Pharma,927
+aryadutahotelgroup,ARYADUTA Hotel Group,928
+gmf-aeroasia,GMF AeroAsia,929
+akrivia-hcm,Akrivia HCM,930
+iss-indonesia,ISS Indonesia,931
+seven-retail,SEVEN Retail Group,932
+the-executive-centre,The Executive Centre,933
+ahlstrom,Ahlstrom,934
+pt-astra-graphia-information-technology,PT. Astra Graphia Information Technology (AGIT),935
+acclime,Acclime,936
+wenglor-sensoric,wenglor sensoric group,937
+hjferonikel,PT Halmahera Jaya Feronikel (Harita Group),938
+cakrawalaandalastelevisi,PT. Cakrawala Andalas Televisi ( ANTV ),939
+adventus-asia-pte-ltd,Adventus,940
+anteraja,Anteraja,941
+guntner,Güntner,942
+lotusflare,LotusFlare,943
+harita-group,Harita Group,944
+kargotech,Kargo Technologies,945
+pt.-yutaka-manufacturing-indonesia-astra-group-,PT. Yutaka Manufacturing Indonesia (Astra Group),946
+sta-resources,PT. Sumber Tani Agung Resources Tbk,947
+pt.-link-it-360,LinkIT pt.,948
+elnusa-fabrikasi-konstruksi,PT Elnusa Fabrikasi Konstruksi,949
+pt-mandom-indonesia,PT Mandom Indonesia Tbk,950
+hexpharm-jaya-laboratories,PT Hexpharm Jaya Laboratories (A Kalbe Company),951
+bipo-svc,BIPO,952
+pt.-federal-international-finance,FIFGROUP,953
+slimstock,Slimstock,954
+sycomp,Sycomp,955
+muf,Mandiri Utama Finance,956
+evsearch,EV Search,957
+excelitas-technologies,Excelitas Technologies Corp.,958
+pt.-krakatau-steel,PT Krakatau Steel (Persero) Tbk,959
+irdglobal,IRD Global,960
+musim-mas-group,Musim Mas Group,961
+emerhub,Emerhub,962
+argo-manunggal-group,Argo Manunggal Group,963
+rgf-hr-agent,RGF HR Agent,964
+martha-tilaar-group,Martha Tilaar Group,965
+dealls,"Dealls – Jobs, CV & Mentoring",966
+cfldi,CFLD International,967
+aladinbank,Bank Aladin Syariah,968
+pluang,Pluang,969
+magangupdate,MagangUpdate,970
+harting,HARTING Technology Group,971
+bhms-bundamedikhealthservice,BMHS (Bundamedik Healthcare System),972
+p-t-karya-bhumi-lestari-kbl,PT Karya Bhumi Lestari,973
+cdcui,Career Development Center Universitas Indonesia,974
+tanoto-foundation,Tanoto Foundation,975
+dezan-shira-associates,Dezan Shira & Associates,976
+pt-imc-pelita-logistik,PT IMC Pelita Logistik Tbk (formerly Pelita Samudera Shipping),977
+j-pal,Abdul Latif Jameel Poverty Action Lab (J-PAL),978
+pt-maspionplastic,PT. MASPION PLASTIC DIVISION,979
+aden-group,Aden Group,980
+pt-citilink-indonesia,Citilink Indonesia,981
+caldicapac,Caldic APAC,982
+xaxis,Xaxis,983
+artotel-group, Artotel Group,984
+cardno-international-development,Cardno International Development,985
+cakap,Cakap,986
+valleerecruitment,Vallée Executive Search,987
+yhsgroup,Yeo Hiap Seng (Yeo’s),988
+epacflexiblepackaging,ePac Flexible Packaging,989
+metrodata,PT. Metrodata Electronics Tbk.,990
+royal-de-heus,Royal De Heus,991
+normetgroup,Normet Group,992
+happyfresh,HappyFresh,993
+pt-indolakto,PT Indolakto,994
+konimex,Konimex Group,995
+indotruckutama,PT Indotruck Utama,996
+systemiq,Systemiq Ltd.,997
+synergy-lestari-group,Synergy Lestari Group,998
+global-expat,Global Expat Recruiting,999
+wilo-group,Wilo Group,1000
+samsung-electronics-seao,Samsung Southeast Asia & Oceania,1001
+pertamina-hulu-energi-onwj-ltd,Pertamina Hulu Energi ONWJ Ltd,1002
+haier-sales-indonesia,Haier Sales Indonesia (AQUA Elektronik),1003
+berca-hardayaperkasa,PT Berca Hardayaperkasa,1004
+princetondg,Princeton Digital Group,1005
+indonesian-bankers-club,INDONESIAN BANKERS CLUB,1006
+association-of-international-certified-professional-accountants,Association of International Certified Professional Accountants,1007
+gotoko,GOTOKO,1008
+jiva-agtech,Jiva,1009
+xtremax,Xtremax,1010
+human-resources-career,"Human Resources, Development, Recruitment, GA, Compensation & Benefit and Payroll Career",1011
+applus-pacific,Applus+ Pacific,1012
+info-loker-dan-karir-freshgraduate,Info Loker dan Karir Freshgraduate,1013
+sumbawa-timur-mining,Sumbawa Timur Mining,1014
+pt-industri-jamu-dan-farmasi-sido-muncul,PT Industri Jamu Dan Farmasi Sido Muncul Tbk,1015
+pt-japfa-comfeed-indonesia,PT.Japfa Comfeed Indonesia,1016
+hashmicro,HashMicro,1017
+van-kaizen,Van Kaizen,1018
+goodpack-limited,Goodpack,1019
+ottoint,Otto International,1020
+badan-nasional-sertifikasi-profesi,Badan Nasional Sertifikasi Profesi,1021
+astra-credit-companies-acc-,Astra Credit Companies (ACC),1022
+herminahospitals,Hermina Hospital Group,1023
+ptpermatakaryajasa,PT Permata Karya Jasa,1024
+pt-qpon-digital-indonesia,Qpon Indonesia,1025
+bmt,BMT,1026
+witteveen-bos,Witteveen+Bos,1027
+kaoindonesia,PT. Kao Indonesia,1028
+advantage-group-international,Advantage Group International,1029
+pt-esensi-solusi-buana-esb,PT Esensi Solusi Buana (ESB),1030
+pt-ecogreen-oleochemicals-batam,PT Ecogreen Oleochemicals Batam,1031
+shanhaimap,PT ShanHaiMap Mitra Konsultan,1032
+kemdikbud,Kementerian Pendidikan dan Kebudayaan (Ministry of Education and Culture Republic of Indonesia),1033
+tibco,TIBCO,1034
+gevernova-asia,GE Vernova in Asia,1035
+forestinteractive,Forest Interactive,1036
+powerchina-huadong-engineering-corporation-limited,Powerchina Huadong Engineering Corporation Limited,1037
+indepay,Indepay | Setara Networks,1038
+b%C3%BCchi-labortechnik-ag,BUCHI Laboratory Equipment,1039
+kftd,PT Kimia Farma Trading & Distribution (KFTD),1040
+gupshup,Gupshup,1041
+social-discovery-group,Social Discovery Group,1042
+telkom-international,Telin,1043
+karirtekniksipil,Karir Teknik Sipil,1044
+bio-farma---indonesia,Bio Farma - Indonesia,1045
+pt-zenius-education,Zenius,1046
+pt-trans-retail-indonesia,PT. Trans Retail Indonesia,1047
+lgmg-group,LGMG,1048
+pt.-bumi-resources-tbk.,"PT. BUMI Resources, Tbk.",1049
+pt-computrade-technology-international,PT. Computrade Technology International (CTI Group),1050
+bluetti,BLUETTI,1051
+decathlon-indonesia,Decathlon Indonesia,1052
+,Oracle Cloud HCM,1053
+paper-id,Paper,1054
+jardine-schindler,Jardine Schindler Group,1055
+phintracogroup,Phintraco Group,1056
+cheil-worldwide-inc-,Cheil Worldwide,1057
+yupi-indo-jelly-gummy,PT. Yupi Indo Jelly Gum Tbk,1058
+oilandgasworld,Oil and Gas Industry,1059
+rohaglobal,Roha,1060
+locus-sh,Locus,1061
+cinema21,CINEMA XXI,1062
+andalin,Andalin,1063
+kemet-electronics,KEMET Electronics Corporation,1064
+toyota-astra-motor, PT Toyota-Astra Motor,1065
+validusgroup,Validus Group,1066
+gtv18,Global TV,1067
+linktone-indonesia,MNC Media,1068
+relx-international,RELX International,1069
+pt.-richeese-kuliner-indonesia,PT. Richeese Kuliner Indonesia,1070
+lamudi-co-id,Lamudi.co.id | Teman Tepercaya Cari Properti,1071
+international-container-terminal-services-inc.,"International Container Terminal Services, Inc.",1072
+sciecomm,SCI Group,1073
+pt-indomobil-finance-indonesia,PT. Indomobil Finance Indonesia,1074
+pt.-quantum-select-indonesia,Reqruit Asia,1075
+crown-worldwide-group,Crown Worldwide Group,1076
+kuoni-tumlare,Kuoni Tumlare,1077
+2c2p,2C2P,1078
+habasit,Habasit,1079
+kata-ai,Kata.ai,1080
+pearl-global-industries-ltd-pgil,PEARL GLOBAL INDUSTRIES LTD (PGIL) ,1081
+wiz-ai,WIZ.AI,1082
+bnsp-ri,Badan Nasional Sertifikasi Profesi (BNSP),1083
+tentanganak,Tentang Anak,1084
+avo-innovation-&-technology,AVO Innovation Technology,1085
+dankosfarma,PT Dankos Farma,1086
+future-creative-network,Future Creative Network (FCN),1087
+gentlyindonesia,Gently,1088
+mslglobal,MSL (Global),1089
+jd-sports-indonesia,JD Sports Indonesia,1090
+pt-uni-charm-indonesia-tbk,PT Uni-Charm Indonesia Tbk,1091
+pico-global,Pico Group,1092
+newlabgroup,Newlab+ Group,1093
+pt-etana-biotechnologies-indonesia,PT Etana Biotechnologies Indonesia,1094
+indodax,INDODAX - Indonesia Digital Asset Exchange,1095
+b20southafrica,B20 South Africa,1096
+stanford-institute-for-innovation-in-developing-economies,Stanford Seed,1097
+tirto,Tirto.ID,1098
+center-for-indonesia's-strategic-development-initiatives-cisdi-,Center for Indonesia's Strategic Development Initiatives (CISDI),1099
+pt-lancar-wiguna-sejahtera-lawson-indonesia,PT Lancar Wiguna Sejahtera (Lawson Indonesia),1100
+wahanadutajayarucika,PT. Wahana Duta Jaya Rucika,1101
+pt-central-proteina-prima-tbk,"PT. Central Proteina Prima, Tbk",1102
+foomlabglobal,FOOM LAB GLOBAL,1103
+mma-offshore,MMA Offshore,1104
+generali-indonesia,Generali Indonesia,1105
+inter-island,Inter Island Group,1106
+kppmining,Kalimantan Prima Persada (KPP MINING),1107
+millenniumtechnologyservices,Millennium Technology Services,1108
+pt-inspirasi-bisnis-nusantara-haus-indonesia,Haus Indonesia - PT. Inspirasi Bisnis Nusantara ,1109
+propan-raya,PT Propan Raya ICC,1110
+efl-global,EFL,1111
+pt-lrt-jakarta,LRT Jakarta,1112
+dagangan,Dagangan,1113
+deli-group-co-ltd-,"Deli Group Co., Ltd.",1114
+tauzia-hotel-management,TAUZIA Hotel Management,1115
+rsm-indonesia,RSM INDONESIA,1116
+theparentinc,The Parentinc,1117
+bpjs-kesehatan,BPJS Kesehatan,1118
+itt,ITT Inc.,1119
+hrd-khong-guan-group,Khong Guan Group,1120
+pt-toba-pulp-lestari,Toba Pulp Lestari,1121
+intinyagroup,INTI NYA GROUP,1122
+lion&lion,Lion & Lion,1123
+transcosmos-indonesia,Transcosmos Indonesia (Official),1124
+exclusive-networks,Exclusive Networks,1125
+siaga-abdi-utama,PT Siaga Abdi Utama,1126
+norconsult-telematics-ltd,Norconsult Telematics,1127
+line-indonesia,LINE Indonesia,1128
+poliform,Poliform ,1129
+hhplawfirm,HHP Law Firm,1130
+pt-prodia-widyahusada-tbk,PT Prodia Widyahusada Tbk,1131
+,Johnson Controls Asia Pacific,1132
+pt.-bank-kb-bukopin-tbk,KB Bank ,1133
+midplaza,Midplaza Holding,1134
+pt.-transportasi-jakarta-transjakarta-,Transjakarta,1135
+australian-embassy-indonesia,"Australian Embassy, Indonesia",1136
+ptpertaminapatraniaga,PT Pertamina Patra Niaga,1137
+pt-nindya-karya-persero,PT Nindya Karya (Persero),1138
+hijrabyalamigroup,Hijra,1139
+info-lowongan-kerja,Lowongan Kerja Terbaru,1140
+mmdgroup,MMD GROUP,1141
+pt-supra-primatama-nusantara-biznet-,Biznet (PT. Supra Primatama Nusantara),1142
+glico-co-ltd-,GLICO,1143
+silverpush,Silverpush,1144
+roedl-&-partner,Rödl & Partner,1145
+pt-penta-natural-kosmetindo,NPURE - PT. Penta Natural Kosmetindo,1146
+shihlin-taiwan-street-snacks-indonesia,Shihlin Taiwan Street Snacks (Indonesia),1147
+pharmacy-career-channel,Pharmacy Career Center,1148
+pt-jaya-real-property-tbk,"PT Jaya Real Property, Tbk",1149
+pt.-weda-bay-nickel,Weda Bay Nickel,1150
+saturdays-id,SATURDAYS,1151
+pt-bank-qnb-indonesia-tbk,PT. Bank QNB Indonesia Tbk,1152
+delosaqua,DELOS,1153
+bucketplace,Bucketplace (오늘의집),1154
+pt-unggul-dinamika-utama,PT. Unggul Dinamika Utama,1155
+thinkwell-global,ThinkWell,1156
+kitalulusid,KitaLulus,1157
+majoo-indonesia,majoo Indonesia,1158
+groundprobe,GroundProbe,1159
+prudential-syariah-indonesia,Prudential Syariah,1160
+nipponpaint-indonesia,Nippon Paint Indonesia,1161
+fullerton-health,Fullerton Health,1162
+quotient-technology,Quotient Technology Inc.,1163
+pt-wintermar,Wintermar Offshore Marine Tbk,1164
+medion-group,Medion Group ,1165
+modalku,Modalku,1166
+vidio-dot-com,Vidio,1167
+schenck-process,Schenck Process,1168
+bank-internasional-indonesia,Bank Internasional Indonesia,1169
+ceria-nugraha-indotama,Ceria Corp.,1170
+honda-prospect-motor,Honda Prospect Motor,1171
+ati-business-group,ATI Business Group,1172
+paxocean,PaxOcean,1173
+ids-medical-systems,IDS Medical Systems (idsMED),1174
+datanest,Datanest,1175
+pt-surya-citra-media-tbk,"PT Surya Citra Media, Tbk",1176
+kalimantanjobs,KalimantanJobs.com,1177
+mitsui-chemicals-group,Mitsui Chemicals Group,1178
+benchmark-mineral-intelligence,Benchmark Mineral Intelligence,1179
+greenfieldsdairygroup,Greenfields Dairy Group,1180
+lingua-assess,Lingua Learn,1181
+ondaintegra,PT Onda Mega Integra,1182
+ohsomeofficial,OH!SOME,1183
+carsome,CARSOME,1184
+emc-healthcare-group,EMC Healthcare,1185
+pt-pupuk-indonesia-holding-company,PT Pupuk Indonesia (Persero),1186
+,Oracle Utilities,1187
+pt-cikarang-listrindo-power-plant-company-,PT Cikarang Listrindo Tbk,1188
+ptnoseherbalindo,PT. Nose Herbalindo,1189
+uniview-technologies-co-ltd,Uniview,1190
+digitalrealtybersama,Digital Realty Bersama,1191
+dparchitects,DP Architects,1192
+polyplex,Polyplex,1193
+vs-people-ltd,Sheffield Energy,1194
+manuport-logistics,Manuport Logistics (MPL),1195
+fks-group-indonesia,FKS Group,1196
+department-of-energy-and-economic-diversification,Department of Energy and Economic Diversification,1197
+gudangada,GudangAda,1198
+pt-people-search-international,People Search International,1199
+sawitpro,SawitPRO,1200
+indonet,Indonet,1201
+unicef-indonesia,UNICEF Indonesia,1202
+techwaukee,Techwaukee,1203
+eastventures,East Ventures,1204
+tukrcoid,TUKR,1205
+the-tech-capital,The Tech Capital,1206
+nipponshokubaiindonesia,PT. Nippon Shokubai Indonesia,1207
+jadestone-energy,Jadestone Energy,1208
+virginmusic,Virgin Music Group,1209
+tripledot-studios,Tripledot Studios,1210
+pure-data-centres-group,Pure Data Centres Group,1211
+lion-parcel,Lion Parcel,1212
+buma-international-group,BUMA International Group,1213
+gbcorporg,GBCORP,1214
+mandiri-sekuritas,Mandiri Sekuritas,1215
+agc-group,AGC Group,1216
+cheilindonesia,Cheil Indonesia,1217
+inverto-gmbh,Inverto | A BCG Company,1218
+leschaco---lexzau-scharbau-gmbh-&-co-kg,LESCHACO - Lexzau Scharbau GmbH & Co. KG,1219
+bumninfo,BUMN Info,1220
+partipost,Partipost Indonesia,1221
+pt-angkasa-pura-ii-tbk,PT.Angkasa Pura II Tbk,1222
+organiksehatalami,SESA Indonesia,1223
+austinengineering,Austin Engineering Ltd,1224
+pt-triputra-agro-persada-tbk,PT TRIPUTRA AGRO PERSADA GROUP,1225
+pt-antang-gunung-meratus-baramulti-group,PT Antang Gunung Meratus (Baramulti Group),1226
+ajwc,Alpha JWC Ventures,1227
+csra-official,PT Cisadane Sawit Raya Tbk - CSRA ,1228
+mie-sedap,"PRAKARSA ALAM SEGAR, PT",1229
+pharmeng-technology,PharmEng Technology,1230
+kartu-prakerja,Prakerja,1231
+eurokarsindonesia,Eurokars Group Indonesia,1232
+allianzindonesia,Allianz Indonesia,1233
+bdo-in-indonesia,BDO in Indonesia,1234
+ats-global,ATS Global,1235
+bernofarm,Bernofarm,1236
+logistik-pintar-indonesia-logisly,Logisly,1237
+recruitment-pt-garuda-indonesia,Recruitment PT Garuda Indonesia,1238
+mitra-keluarga,Mitra Keluarga,1239
+livoltek,LIVOLTEK,1240
+hpu-hpmu,PT. Harmoni Panca Utama,1241
+tradeinvestqld,Trade and Investment Queensland,1242
+esri-indonesia,Esri Indonesia,1243
+kreditpintar,Kredit Pintar,1244
+sttgdc,ST Telemedia Global Data Centres,1245
+altonetwork,PT ALTO Network,1246
+pt-rose-cosmetics-international,Rosé All Day,1247
+jobs-agri,Jobs Agri,1248
+lokersemar,LokerSemar.id - Lowongan Kerja Semarang,1249
+tog-indonesian,TOG Indonesia,1250
+goldengateventures,Golden Gate Ventures,1251
+prochiz,PT. Mulia Boga Raya Tbk - Prochiz,1252
+sea6-energy-private-limited,Sea6 Energy Pvt Ltd.,1253
+first-resources-ltd.,First Resources Ltd.,1254
+narasitv,Narasi.tv,1255
+matahari,PT Matahari Department Store Tbk,1256
+star-energy-oil,Star Energy,1257
+cleantech-solar,Cleantech Solar,1258
+pt-antareja-mahada-makmur,PT Antareja Mahada Makmur,1259
+alamisharia,ALAMI,1260
+primaya-hospital,Primaya Hospital,1261
+pt-champ-resto-indonesia-tbk,PT. Champ Resto Indonesia Tbk,1262
+binmile,PT Binmile Teknologi Indonesia,1263
+haier-electrical-appliances-indonesia-pt,PT. Haier Electrical Appliances Indonesia,1264
+rovisys,RoviSys,1265
+chubb-life,Chubb Life,1266
+pt-sharp-electronics-indonesia,PT Sharp Electronics Indonesia,1267
+schoters,Schoters,1268
+hpiagro,HPI Agro,1269
+youvitindonesia,Youvit,1270
+red-comm-indonesia,RED Comm Indonesia,1271
+centralmegakencana,PT. Central Mega Kencana,1272
+achilles-systems-pte-ltd,OnlinePajak,1273
+jobsrefer-indonesia,Jobsrefer Indonesia,1274
+oto.com,OTO,1275
+pt-krakatau-posco,PT Krakatau Posco,1276
+ofiindonesia,ofi Indonesia,1277
+suveryor-id,PT Surveyor Indonesia,1278
+pt-bayan-resources-tbk,PT Bayan Resources Tbk,1279
+pt.-elang-mahkota-teknologi,Emtek (PT Elang Mahkota Teknologi Tbk),1280
+biznet-gio-cloud,Biznet Gio Cloud (PT Biznet Gio Nusantara),1281
+earthworm-foundation,Earthworm Foundation,1282
+pt-adicipta-inovasi-teknologi,PT Adicipta Inovasi Teknologi,1283
+activate-interactive-pte-ltd,Activate Interactive,1284
+giiftloyalty,Giift,1285
+teltonika-telematics,Teltonika Telematics,1286
+pt-pos-indonesia-persero,PT Pos Indonesia (Persero),1287
+saffnco,SAFF & Co.,1288
+ambersof,PT Amber Solusi Internasional,1289
+mindworks-capital,MindWorks Capital,1290
+mims-pte-ltd,MIMS Pte Ltd,1291
+pt-hanwa-indonesia,PT. Hanwa Indonesia,1292
+daewoong-pharmaceutical,Daewoong Pharmaceutical,1293
+allofresh,AlloFresh,1294
+searchingyardgroup,SearchingYard.Group,1295
+phintraco-consulting,PHINCON,1296
+dqlab,DQLab,1297
+arobs,AROBS Group,1298
+indocyber-global-teknologi-pt,"Indocyber Global Teknologi, PT",1299
+pt-indofood-cbp-sukses-makmur-tbk-noodle-division,PT Indofood CBP Sukses Makmur Tbk - Noodle Division,1300
+maukerja-indonesia,Maukerja Indonesia,1301
+ktu-shipyard,KTU Shipyard,1302
+pt-grand-indonesia,PT Grand Indonesia,1303
+aithoth,Thoth AI,1304
+chickinindonesia,Chickin Indonesia,1305
+taco-id,TACO Group,1306
+pt-asuransi-jiwa-sinarmas-msig-sinarmas-msig-life-,MSIG Life,1307
+4oceanpbc,4ocean PBC,1308
+pt.-abc-president-indonesia,PT. ABC President Indonesia,1309
+pt.-dharma-polimetal_tbk,PT Dharma Polimetal Tbk,1310
+micromine,Micromine,1311
+santikaindonesia,PT Grahawita Santika (Santika Hotels & Resorts),1312
+cnbcindonesia,CNBC Indonesia,1313
+incodetech,Incode,1314
+sahabatmikrofintek,SAMIR,1315
+sapx-express,"PT Satria Antaran Prima Tbk. (""SAP Express""​)",1316
+doku-indonesia,"DOKU, PT NUSA SATU INTI ARTHA",1317
+samudera-indonesia,Samudera Indonesia,1318
+mrihumana,Humana International Group,1319
+kementerian-ketenagakerjaan-republik-indonesia,Kementerian Ketenagakerjaan Republik Indonesia,1320
+wonokoyo-jaya-corporindo,PT. Wonokoyo Jaya Corporindo (Wonokoyo Group),1321
+mms-group-indonesia,MMS GROUP INDONESIA,1322
+voestalpine-boehler-welding,voestalpine Böhler Welding,1323
+upcomingcompany2,Upcoming Company,1324
+pt-mulia-industrindo-tbk,PT Mulia Industrindo Tbk,1325
+prym-group,PRYM,1326
+pt-pupuk-kalimantan-timur,PT Pupuk Kalimantan Timur,1327
+pt-wom-finance-tbk,WOM Finance,1328
+pacific-garden,Pacific Garden,1329
+lancesoft-indonesia,Lancesoft Indonesia,1330
+wearingklamby,KLAMBY,1331
+myboostbank,Boost Bank,1332
+dcvi,Daimler Commercial Vehicles Indonesia (DCVI),1333
+appnext,Appnext,1334
+pt-jaya-konstruksi-manggala-pratama-tbk,"PT Jaya Konstruksi Manggala Pratama,Tbk",1335
+apar-technologies,Apar Technologies,1336
+pt-infomedia-solusi-humanika,PT Infomedia Solusi Humanika (ISH),1337
+kadence,Kadence International,1338
+educationnewzealand,Education New Zealand | Manapou ki te Ao,1339
+bank-hana,PT Bank KEB Hana Indonesia,1340
+rumah-siap-kerja-official,Rumah Siap Kerja,1341
+rieckermann,Rieckermann,1342
+aeon-credit-service-indonesia,AEON Credit Service Indonesia,1343
+dikshatechnologies,Diksha Technologies,1344
+oia-global,OIA GLOBAL,1345
+score-group,Score Group,1346
+asuransiastra,Asuransi Astra,1347
+supreme-energy-muara-laboh,Supreme Energy,1348
+pt-gold-coin-indonesia,Gold Coin Indonesia - Aboitiz Foods,1349
+bussr,Bussr,1350
+bithealth,BitHealth,1351
+plantlipids,Plant Lipids Private Limited,1352
+maschinenfabrik-reinhausen,Maschinenfabrik Reinhausen,1353
+zte-indonesia,ZTE Indonesia,1354
+mnc-asia-holding,MNC GROUP - PT MNC ASIA HOLDING TBK,1355
+,Oracle Developers,1356
+webbeds,WebBeds,1357
+assegaf-hamzah-&-partners,Assegaf Hamzah & Partners,1358
+schunk,SCHUNK - Hand in hand for tomorrow,1359
+agung-sedayu-realestat-indonesia,ASRI (a subsidiary of Agung Sedayu Group),1360
+brin-ri,Badan Riset dan Inovasi Nasional RI (BRIN RI),1361
+zuzuhospitality,ZUZU Hospitality,1362
+deifgroup,DEIF,1363
+mas-id,Mirae Asset Sekuritas Indonesia,1364
+vhrconsultancy,VHR Consultancy,1365
+pintarnya,Pintarnya,1366
+pt-inertia-utama-dexa-group-,Dexa Group,1367
+sctv,SCTV,1368
+daifuku,Daifuku,1369
+tigerhall,Tigerhall,1370
+forskinssake,FSS - For Skin's Sake,1371
+loker-surabaya,LOKER SURABAYA,1372
+warungpintar,Warung Pintar,1373
+lamberti,Lamberti,1374
+pt-total-bangun-persada-tbk,PT TOTAL BANGUN PERSADA Tbk,1375
+,Cargill Bioindustrial,1376
+gobipartners,Gobi Partners,1377
+flash-coffee,Flash Coffee,1378
+stockbit,Stockbit,1379
+hk-infrastruktur,PT Hutama Karya Infrastruktur,1380
+triveni-turbines,Triveni Turbine Limited,1381
+katadata,KATADATAcoid,1382
+gracenote,Gracenote,1383
+facetology-innovation-technology,Facetology,1384
+xapads,Xapads Media,1385
+rs-pelni,PT Rumah Sakit PELNI,1386
+ditrolic-energy,Ditrolic Energy,1387
+d-b-group-spa,D.B. Group,1388
+pt-idstar-cipta-teknologi,PT IDstar Cipta Teknologi (IDstar),1389
+mitracomm-ekasarana,Mitracomm Ekasarana,1390
+dataminesw,Datamine,1391
+hr-recruitment-pt-mustika-ratu,HR Recruitment PT Mustika Ratu,1392
+matchatalent,MatchaTalent,1393
+impacthubnetwork,Impact Hub Network,1394
+bintang-subsea,Bintang Subsea,1395
+pt-integritas-perkasa-konstruksi,PT Integritas Perkasa Konstruksi,1396
+robert-bosch-indonesia,Bosch Indonesia,1397
+vads-id,PT VADS Indonesia,1398
+kelola-talenta-global,Kelola Talenta Global,1399
+,Worldline Financial Services,1400
+deutscheauslandshandelskammer,Deutsche Auslandshandelskammern (AHK),1401
+pt-cosmax-indonesia,COSMAX Indonesia,1402
+pt-luxury-cantika-indonesia-luxcrime,PT. Luxury Cantika Indonesia (Luxcrime),1403
+brinks-indonesia,Brink's Indonesia,1404
+pt.-indika-energy-tbk.,PT Indika Energy Tbk.,1405
+rdmpjo,RDMP Balikpapan JO,1406
+jobs.id,Jobs ID,1407
+destination-asia,Destination Asia,1408
+pt-mitsuba,PT Mitsuba Indonesia,1409
+labware,LabWare,1410
+hsfkramer,Herbert Smith Freehills Kramer,1411
+fap-agri,FAP Agri Tbk,1412
+energyandoceans,ABL,1413
+parrotias,Parrotias,1414
+akashainternational,"PT. Akasha Wira International, Tbk.",1415
+markplus-inc,"MARKPLUS, CORP.",1416
+pt-hexindo-adiperkasa-tbk,PT Hexindo Adiperkasa Tbk,1417
+jgc-indonesia-career,JGC Indonesia Career,1418
+pt-sierad-produce-tbk,PT Sreeya Sewu Indonesia Tbk,1419
+terma-a-s,Terma Group,1420
+alfred-h-knight,Alfred H Knight,1421
+samanea,Samanea Group,1422
+pt-surya-pertiwi-tbk,PT. Surya Pertiwi Tbk,1423
+,Evonik Personal Care,1424
+atpi,ATPI,1425
+agriaku,AgriAku,1426
+quipper-limited,Quipper,1427
+cloud-kinetics,Cloud Kinetics ,1428
+pt-austindo-nusantara-jaya-tbk,PT. Austindo Nusantara Jaya. Tbk,1429
+it-group-inc-,"IT Group, Inc.",1430
+pt-pembangkitan-jawa-bali,PT PLN Nusantara Power,1431
+ptsiixelectronicsindonesia,PT. SIIX ELECTRONICS INDONESIA,1432
+,"WTW Health, Wealth & Career",1433
+fiberstarid,PT Mega Akses Persada (FiberStar),1434
+carrogroup,Carro,1435
+pt-sinbad,Sinbad,1436
+pt-showa-indonesia-manufacturing,PT Showa Indonesia Manufacturing,1437
+jobseeker-company,Jobseeker Company,1438
+j-t-cargo-pt-global-jet-cargo,J&T Cargo Indonesia (PT Global Yimi Cargo),1439
+pt-pelsart-tambang-kencana,PT. Pelsart Tambang Kencana,1440
+neumann-kaffee-gruppe,Neumann Kaffee Gruppe (NKG),1441
+yotel,YOTEL,1442
+mutuinternational,MUTU International (PT Mutuagung Lestari Tbk),1443
+victoryjakartakuningan,PT Victory International (Cabang Jakarta Kuningan),1444
+pt-borwita-citra-prima,BORWITA CITRA PRIMA,1445
+travel-designer-india-pvt-ltd,Travel Designer Group,1446
+pt-bisi-international-tbk,"PT. BISI International, Tbk",1447
+discovatravel,Discova,1448
+bank-jtrust-indonesia,PT BANK JTRUST INDONESIA Tbk.,1449
+supermombusiness,Supermom Business,1450
+pt-kosmetika-global-indonesia,PT KOSMETIKA GLOBAL INDONESIA,1451
+purolite,"Ecolab, Purolite Resins",1452
+forestcarbon,Forest Carbon,1453
+servicescompanyformed,Jack Boath fan page,1454
+skillacademy-id,Skill Academy by Ruangguru,1455
+pt-kb-finansia-multi-finance,PT. KB Finansia Multi Finance,1456
+global-kapital-group,Global Kapital Group,1457
+mercedes-benz-indonesia,Mercedes-Benz Indonesia,1458
+aweidhia-crew-management,PT. AWEIDHIA CREW MANAGEMENT,1459
+itb-career-center,ITB Career Center,1460
+pelni-162,PT. PELNI (Persero),1461
+pt-24-jam-online,UniPin,1462
+baramulti-group,Baramulti Group,1463
+smartosc,SmartOSC,1464
+pt-danamas-insan-kreasi-andalan,PT Danamas Insan Kreasi Andalan (DIKA),1465
+alcatellucententerprise,Alcatel-Lucent Enterprise,1466
+pt-sinarmas-multifinance,PT Sinarmas Multifinance,1467
+molycop,Molycop,1468
+cherymotorindonesia,Chery Indonesia,1469
+plaza-indonesia,Plaza Indonesia,1470
+panca-budi-tbk,Panca Budi Tbk,1471
+pt-intecs-teknikatama-industri,PT Intecs Teknikatama Industri,1472
+indoprima-group,Indoprima Group,1473
+savoria,Savoria,1474
+pt-pangansari-utama-food-resources,PT. Pangansari Utama Food Resources,1475
+otoklix,Otoklix,1476
+glad2glow,Glad2Glow,1477
+pt-pertamina-international-shipping,PT Pertamina International Shipping,1478
+favebypinelabs,Fave,1479
+pertamina-training-consulting,PT Pertamina Training and Consulting,1480
+weareourteam,OurTeam,1481
+global-process-systems,Global Process Systems,1482
+pt-hli-green-power,PT. HLI Green Power,1483
+exotravel,EXO Travel,1484
+bank-mega-syariah,Bank Mega Syariah,1485
+carsurin_2,Carsurin,1486
+pt-perkebunan-nusantara-iii-persero,PT Perkebunan Nusantara III (Persero),1487
+pt-forisa-nusapersada,PT Forisa Nusapersada,1488
+tnpgroup,TNP Group (Mooimom),1489
+belengkong-mineral-resources,Belengkong Mineral Resources,1490
+amoda-id,AMODA,1491
+pt.-serasi-autoraya,PT. Serasi Autoraya,1492
+,Oracle Analytics,1493
+valuefirstglobal,ValueFirst Digital Media,1494
+gooddoctortech,Good Doctor Technology,1495
+linkedin-pkss,PT. Prima Karya Sarana Sejahtera (Grup BRI),1496
+pt-jasuindo-tiga-perkasa,PT Jasuindo Tiga Perkasa Tbk.,1497
+pt-cyberindo-aditama-cbn-internet-,PT Cyberindo Aditama (CBN),1498
+pnep,PT. Pelayaran Nasional Ekalya Purnamasari Tbk (ELPI),1499
+lxpantos-logistics,LX Pantos,1500
+techdata-apac,Tech Data APAC​,1501
+modernvet-indonesia,modernvet,1502
+bp-akr-fuels-retail,BP AKR Fuels Retail,1503
+pt.-mitra-integrasi-informatika,"Mitra Integrasi Informatika, PT",1504
+indonesia-shuangxi,PT. Kontak Perkasa Futures ,1505
+mie-gacoan,Mie Gacoan,1506
+pt-acset-indonusa-tbk,PT Acset Indonusa Tbk,1507
+orphoz,"Orphoz, a McKinsey company",1508
+crayonchannelapac,Crayon Channel APAC (formerly rhipe),1509
+danantaraindonesia,Danantara Indonesia,1510
+g2-travel-limited,G2 Travel,1511
+inewstv,iNewsTV,1512
+goldenenergymines,PT Golden Energy Mines Tbk,1513
+dorskinn,Dorskin,1514
+vega-level-and-pressure,VEGA Level and Pressure,1515
+pt-astari-niagara-internasional,PT Astari Niagara Internasional,1516
+brawijaya-hospital-group,Brawijaya Hospital Group,1517
+gurit,Gurit,1518
+pt-charoen-pokphand-ind-tbk-east-java,PT Charoen Pokphand Ind. Tbk ,1519
+pashouses,Pashouses,1520
+enseval-medika-prima-pt,"Enseval Medika Prima, PT",1521
+geniebook-pte.-ltd.,Geniebook,1522
+pt--mastersystem-infotama,PT. Mastersystem Infotama,1523
+tokocrypto,Tokocrypto,1524
+prixaai,Prixa.ai,1525
+dviationgroup,Dviation Group,1526
+weconnorhk,William E. Connor & Associates Ltd.,1527
+avristassurance,Avrist Assurance,1528
+ifg-life,IFG Life,1529
+pt-berau-coal,PT Berau Coal,1530
+broom-id,broom.id,1531
+aleph-labs,Aleph-Labs,1532
+protergo,Protergo,1533
+pt.simexpharmaceuticalsindonesia,PT. Simex Pharmaceutical Indonesia,1534
+spindo,PT STEEL PIPE INDUSTRY OF INDONESIA Tbk,1535
+flashvc,Flash Ventures,1536
+the-luxe-nomad,The Luxe Nomad,1537
+pt-saipem-indonesia,PT Saipem Indonesia,1538
+china-telecom-asia-pacific,China Telecom Asia Pacific,1539
+gushcloud-indonesia,Gushcloud Indonesia,1540
+bcs-technology,BCS Technology International Pty Ltd,1541
+jurist-wanna-be,Jurist Wanna Be,1542
+pt-altama-surya-anugerah,PT. Altama Surya Anugerah,1543
+pt-hasnur-jaya-utama-hasnur-group,PT Hasnur Jaya Utama (Hasnur Group),1544
+pt-garuda-metalindo-tbk,"PT Garuda Metalindo, Tbk.",1545
+pt-samudera-mulia-abadi,PT Samudera Mulia Abadi,1546
+kupu-id,KUPU ID,1547
+pentland-brands,Pentland Brands,1548
+sri-executive-search,SRI Executive,1549
+links-recruitment-limited,Links International,1550
+pt-bank-panin-tbk,PT Bank Panin Tbk,1551
+novade-solutions,Novade Solutions,1552
+pt-indonesia-morowali-industrial-park,PT INDONESIA MOROWALI INDUSTRIAL PARK,1553
+pgnsaka,Saka Energi Indonesia,1554
+bali-hotels-association,Bali Hotels Association,1555
+permodalannasionalmadani,PT. Permodalan Nasional Madani (Persero),1556
+orise,Orise,1557
+pt-astra-international-tbk---toyota,PT Astra International Tbk - Toyota,1558
+john-cockerill-hamon,Hamon Group,1559
+daikin-indonesia,Daikin Indonesia,1560
+kpn-plantations,KPN Plantations,1561
+palma-serasih-group,PT. Palma Serasih Tbk.,1562
+makeen-energy,MAKEEN Energy A/S,1563
+torrecid-s-a-,"TORRECID, S.A.",1564
+maka-motors,MAKA Motors,1565
+ritzcarltonbali,"The Ritz-Carlton, Bali",1566
+pt-anugrah-argon-medica,Anugrah Argon Medica ,1567
+tencent-cloud,Tencent Cloud,1568
+cloudmile,CloudMile,1569
+btpnsyariah,BTPN Syariah,1570
+inboundid,InboundID,1571
+airy-indonesia,Airy,1572
+telum-media,Telum Media,1573
+badan-pusat-statistik,Badan Pusat Statistik,1574
+tourmindtech,Tourmind,1575
+insidecatalyst,Catalyst,1576
+lowongancpnsbumn,Lowongan Kerja Terbaru,1577
+pt-pos-logistics-indonesia,PT Pos Logistik Indonesia,1578
+viveregroup,VIVERE Group,1579
+realme-indonesia,realme Indonesia,1580
+pt-toyota-tsusho-logistic-center,PT Toyota Tsusho Logistic Center,1581
+decklar,Decklar,1582
+oyo-indonesia,OYO Indonesia,1583
+pt-otto-pharmaceutical-industries-ltd,PT Otto Pharmaceutical Industries,1584
+pt-timah-tbk,PT Timah (Persero) Tbk,1585
+pakogroup,PAKO GROUP,1586
+pt-midi-utama-indonesia-tbk,"PT Midi Utama Indonesia, Tbk",1587
+clasp,CLASP,1588
+pt-nusa-raya-cipta-tbk-nrca,PT Nusa Raya Cipta Tbk (NRCA),1589
+adsi,Axiata Digital Services Indonesia,1590
+,Oracle Retail,1591
+cahayariaumandiri,PT CAHAYA RIAU MANDIRI,1592
+iniviehospitality,Ini Vie Hospitality,1593
+pt-ithaca-resources,PT Ithaca Resources,1594
+pt-telkom-akses,PT. TELKOM AKSES,1595
+lg-innotek,LG Innotek,1596
+hillcon,Hillcon,1597
+knauf-ceiling-solutions,Knauf Ceiling Solutions,1598
+waste4change,Waste4Change,1599
+fluke-reliability,Fluke Reliability,1600
+pt-britmindo,Britmindo Group,1601
+prophix-software,Prophix,1602
+arethia,Arethia,1603
+docib-healthcare-management,DOCIB Pharmacies & Clinic,1604
+equinoxshippinggroup,Equinox Shipping Group,1605
+human8,Human8,1606
+pt-bina-sarana-sukses,PT. Bina Sarana Sukses,1607
+ykk-ap-indonesia,PT YKK AP INDONESIA,1608
+bankbjb,bank bjb,1609
+omdc-dental-clinic,OMDC GROUP,1610
+foodplusbycompass,Food+ by Compass,1611
+greiner-bio-one-int,Greiner Bio-One International,1612
+pt-arutmin-indonesia,PT Arutmin Indonesia,1613
+rocktree,Rocktree,1614
+,AFRY Management Consulting,1615
+pt-lion-air,PT Lion Air,1616
+valco-melton,Valco Melton,1617
+studyin-global,StudyIn,1618
+gunungsewugroup,Gunung Sewu Group,1619
+aidentifi,Aidentifi ,1620
+aseancentreforenergy,ASEAN Centre for Energy,1621
+airudder,AI Rudder,1622
+pt-gaya-makmur-tractors,PT. Gaya Makmur Tractors,1623
+pt-toyota-astra-financial-services,PT TOYOTA ASTRA FINANCIAL SERVICES,1624
+remoterebellion,Remote Rebellion,1625
+orami-id,Orami,1626
+icar-asia-powered-by-carsome,iCar Asia (Powered by CARSOME),1627
+carbonethics,CarbonEthics,1628
+harita-nickel,Harita Nickel,1629
+pt-koltiva,Koltiva,1630
+croweindonesia,Crowe Indonesia,1631
+packet-systems-indonesia,Packet Systems Indonesia,1632
+bigpayme,BigPay ,1633
+pt--citra-tubindo-tbk,PT. Citra Tubindo Tbk,1634
+,Oracle Cloud ERP,1635
+gratyoindonesia,Gratyo® Global Awards Winning Practical Business Coaching,1636
+abeamconsultingsea,ABeam Consulting Southeast Asia (SEA),1637
+connectwithhono,HONO,1638
+rimbunjob,HRnetRimbun - A HRnetGroup Company,1639
+madverse,Madverse,1640
+suri-nusantara-jaya,PT Suri Nusantara Jaya,1641
+jebsen-jessen,Jebsen & Jessen Group,1642
+kariermuid,Karier.mu,1643
+jasamarga,PT Jasa Marga (Persero) Tbk,1644
+hw-group-id,Holywings Group,1645
+dian-swastatika-sentosa,PT Dian Swastatika Sentosa Tbk,1646
+honestbee,honestbee,1647
+hired-today,HiredToday,1648
+the-scoular-company,Scoular,1649
+mitratel,PT Dayamitra Telekomunikasi Tbk‎,1650
+pt-pp-presisi-tbk,PT PP Presisi Tbk,1651
+akulakuindonesia,Akulaku Indonesia,1652
+iforte-solusi-infotek,iForte Solusi Infotek,1653
+xfusion-global,xFusion Global,1654
+yakult-indonesia-persada,Yakult Indonesia Persada Pt,1655
+pt-intim-harmonis-foods-industri,PT. Intim Harmonis Foods Industri,1656
+ipay88-my,iPay88,1657
+pgn-solution,PT PGAS Solution,1658
+deskera,Deskera,1659
+pt-pertamina-lubricants,PT Pertamina Lubricants,1660
+dikshatek,Diksha Teknologi Indonesia,1661
+everbest-group,Everbest Group,1662
+pt-east-west-seed-indonesia,PT East-West Seed Indonesia,1663
+pt-shimano-batam,PT Shimano Batam,1664
+draperstartuphouse,Draper Startup House,1665
+pt-multipolar-technology,PT Multipolar Technology Tbk,1666
+kobieducation,Kobi Education,1667
+rscolumbiaasia,Columbia Asia Indonesia,1668
+microsave,MSC (MicroSave Consulting),1669
+axa-mandiri-financial-services,AXA Mandiri Financial Services,1670
+usha-martin-limited,Usha Martin Limited,1671
+linfoxasia,Linfox Asia,1672
+lenindustri,PT Len Industri (Persero) (Official),1673
+kas-pty-ltd,Anko Sourcing,1674
+aecc-global,aecc,1675
+multiwing,Multi-Wing,1676
+kao-indonesia-chemicals-pt,PT. Kao Indonesia Chemicals,1677
+harcourts,Harcourts Real Estate,1678
+osg-corporation,OSG Corporation,1679
+titaninfraenergy,PT Titan Infra Energy,1680
+ihc-rs-pusat-pertamina,IHC RS Pusat Pertamina,1681
+indonesia-global-network,International Global Network,1682
+enesis-group,Enesis Group,1683
+orbitjobs,Orbit Jobs,1684
+bankmandiritaspen,Bank Mandiri Taspen,1685
+teknovo-id,Teknovo Corp.,1686
+worldwideoilfieldmachine,Worldwide Oilfield Machine,1687
+,Oracle Construction and Engineering,1688
+estehindonesia,ESTEH INDONESIA,1689
+intoo-global,INTOO,1690
+puninar-logistic,Puninar Logistics ,1691
+bcicentral,BCI Central,1692
+pt-sanbe-farma,PT Sanbe Farma,1693
+orix-indonesia-finance,ORIX Indonesia Finance,1694
+kpn-corp,KPN Corp,1695
+gunanusautamafabricators,PT Gunanusa Utama Fabricators,1696
+pratapa-nirmala,PT. PRATAPA NIRMALA (FAHRENHEIT),1697
+lokerkarawang,Loker Karawang,1698
+kalbio-global-medika,Kalbio Global Medika,1699
+kawan-lama-solution,PT. Kawan Lama Solution,1700
+pt-multi-indomandiri,PT Multi Indomandiri (Wings Group),1701
+anthonyveder,Anthony Veder,1702
+qube-holdings,Qube,1703
+leverate-media-asia-pte-ltd-,Leverate Group,1704
+dentsuid,dentsu Indonesia,1705
+vusecurity,VU Inc.,1706
+usetada,Tada,1707
+kodifly,Kodifly,1708
+msbukonsultan,MSBU Konsultan,1709
+dmt_3,DMT GROUP,1710
+scimplify,Scimplify,1711
+turilytix,TURILYTIX.AI,1712
+astrainfra,ASTRA Infra,1713
+samator-group,Samator Group,1714
+media-televisi-indonesia-pt-metro-tv-,"Media Televisi Indonesia, PT  ( METRO TV )",1715
+jictindonesia,PT Jakarta International Container Terminal,1716
+sunenergyid,SUN Energy,1717
+etp-international,ETP Group,1718
+ycpprofessional,YCP,1719
+hakuhodo-digital,Hakuhodo Digital Indonesia,1720
+jaringkerja,Jaringkerja - Jaringan Lowongan Kerja Indonesia,1721
+pt-masmindo-dwi-area,PT Masmindo Dwi Area,1722
+bry-air-asia-private-limited,Bry-Air (Asia) Private Limited,1723
+victionidjakarta,Viction.id,1724
+pt-indonesia-asahan-aluminium,PT Indonesia Asahan Aluminium ,1725
+bawahtanah,Bawahtanah,1726
+park-hyatt-jakarta,Park Hyatt Jakarta,1727
+must-company,MUST Company,1728
+mybcaf,BCA Finance,1729
+kita-bisa,Kitabisa,1730
+kpsgofficial,KPSG Official,1731
+cgv-cinemas,CGV* Cinemas,1732
+cita-mineral-investindo-tbk-pt,PT Cita Mineral Investindo Tbk (CMI),1733
+qiscus,Qiscus,1734
+kordamentha,KordaMentha,1735
+izeno-pte-ltd,iZeno,1736
+pt-aspirasi-hidup-indonesia-tbk,"PT Aspirasi Hidup Indonesia, Tbk.",1737
+wallex,Wallex (by M-DAQ),1738
+gps-united,GPS United (PT Generasi Pasti Sukses),1739
+toaster-ltd,Toaster,1740
+incorpid,InCorp Indonesia,1741
+pt-pelindo-marines,PT Pelindo Marine Service,1742
+tomoro-coffee,TOMORO COFFEE,1743
+aiesecindonesia,AIESEC in Indonesia,1744
+silverlakegroup,Silverlake,1745
+removedcompany2,Sinarmas Land,1746
+kozystay,Kozystay,1747
+okhome,OKHOME,1748
+rebelgroup-advisory,Rebel,1749
+99-co,99 Group (99.co | Rumah123 | SRX) ,1750
+south-pacific-viscose-pt,"South Pacific Viscose, PT. a Lenzing Group company",1751
+omron-manufacturing-of-indonesia-pt,"OMRON MANUFACTURING OF INDONESIA, PT",1752
+minamas-plantation,MINAMAS PLANTATION,1753
+akseleran,Akseleran,1754
+cri-groups,CRI Group,1755
+pertamina-hulu-rokan,Pertamina Hulu Rokan,1756
+pt-dahana-persero,PT DAHANA,1757
+viramakarya,PT Agrinas Jaladri Nusantara (Persero),1758
+smoe-indonesia,PT SMOE Indonesia,1759
+xpertdigital,Xpert Digital,1760
+getblood,Blood,1761
+krakatauchandraenergi,PT Krakatau Chandra Energi,1762
+viralpitch,Viral Pitch: Influencer Marketing Platform,1763
+indesso,Indesso,1764
+tlnthq,TLNT,1765
+groz-beckert-kg,Groz-Beckert,1766
+pt-bukit-makmur-resources,PT Bukit Makmur Resources,1767
+baseid,"BASE, Indonesia",1768
+pt-dhanistha-surya-nusantara,PT Dhanistha Surya Nusantara,1769
+biosensors-international,"Biosensors International Group, Ltd",1770
+pt-mandaya-sehat-utama,Mandaya Hospital Group,1771
+formulatrixid,Formulatrix Indonesia,1772
+aicila,The Aicila Group - International Recruitment & Consulting Specialists,1773
+agrinas-palma-nusantara,PT Agrinas Palma Nusantara (Persero) Official,1774
+codedevelopmentindonesia,CODE.ID,1775
+pt-putragaya-wahana,PT Putragaya Wahana,1776
+ovolo-hotel-group,Ovolo Hotels,1777
+samsonite-apac-middleeast,Samsonite Group APAC & Middle East,1778
+ssquad-global,Ssquad Global,1779
+adi-sarana-armada,ASSA Rent (PT Adi Sarana Armada Tbk),1780
+koinworks,KoinWorks,1781
+plniconplus,PLN Icon Plus,1782
+aboitiz-foods,Aboitiz Foods,1783
+sensormatic,Sensormatic,1784
+hotel-indonesia-kempinski-jakarta,Hotel Indonesia Kempinski Jakarta,1785
+pt-agricon,PT Agricon,1786
+jitera,Jitera,1787
+trackerindo-anugerah-sejahtera,CV. Trackerindo Anugerah Sejahtera,1788
+eos-it-solutions,EOS IT Solutions,1789
+kkbc-co,KKBC - Agen Pemasaran B2B,1790
+mokapos,Moka,1791
+smtownidn,SM Entertainment Indonesia,1792
+ptcampinaicecreamindustrytbk,"PT Campina Ice Cream Industry, Tbk",1793
+pt-mahkot-group-tbk,PT Mahkota Group Tbk,1794
+texcoms-worldwide,Texcoms Worldwide,1795
+pt-rifan-financindo-berjangka,PT Rifan Financindo Berjangka,1796
+desmi-as,DESMI,1797
+pt-digital-distribusi-indonesia,DDI,1798
+voila-id,voilà.id,1799
+acvcapital,ACV Capital,1800
+pt-genero-pharmaceuticals,PT Genero Pharmaceuticals,1801
+klikdokter,KlikDokter,1802
+dailysocial-id,DailySocial.id,1803
+pt-semen-gresik-persero-tbk-,PT Semen Gresik (Persero) Tbk.,1804
+olx-autos,OLX Autos,1805
+removedcompany,Removed Company,1806
+reda-group,REDA Group,1807
+officialotca,OTCA,1808
+line-messenger,LINE Plus Corp,1809
+navaplusgroup,NAVA+ Group,1810
+pt-perkebunan-nusantara-iv-persero-,PT. Perkebunan Nusantara IV (Persero),1811
+pt-cosl-indo-oilfield-chemical-division,PT. COSL INDO - Oilfield Chemical Division,1812
+eigerindompi,PT. Eigerindo Multi Produk Industri,1813
+allianzlifeindonesia,Allianz Life Indonesia,1814
+auroraepc,Aurora Executive Placement Consultant,1815
+migo,Migo,1816
+wpd-gmbh,wpd GmbH,1817
+neo-energy-materials,Anugrah Neo Energy Materials,1818
+brik-construction,BRIK,1819
+sustainablelivinglab,Sustainable Living Lab (SL2),1820
+indozone,INDOZONE,1821
+visinema-pictures,Visinema,1822
+pt-hino-finance-indonesia,PT Hino Finance Indonesia,1823
+pancaran-shipping-group,Pancaran Shipping Group,1824
+spcindo,Sinergi Performa Cipta,1825
+shelf-subsea-pty-ltd,Shelf Subsea,1826
+whoindonesia,World Health Organization Indonesia,1827
+karma-group-global,Karma Group Global,1828
+bobobox-id,Bobobox,1829
+wolkk,Wolkk.,1830
+in-vr-energy,IN-VR,1831
+dreambox-creative,Dreambox Marketing Consultant,1832
+tru-trac,Tru-Trac Rollers (Pty) Ltd,1833
+ongong360,ONG&ONG PTE LTD,1834
+mitrabara-adiperdana-tbk,PT Mitrabara Adiperdana Tbk (Baramulti Group),1835
+abishar-technologies,AbiShar Technologies,1836
+,DMC Sea Career & Maritime Crew,1837
+dci-indonesia,DCI Indonesia,1838
+pt-bank-mnc-international-tbk-mnc-bank,"PT. Bank MNC Internasional, Tbk.",1839
+pt-sarana-multigriya-finansial-persero-,PT Sarana Multigriya Finansial (Persero),1840
+gerakan-indonesia-mengajar,Gerakan Indonesia Mengajar,1841
+proforest,Proforest,1842
+ricobana,PT Ricobana Abadi,1843
+raffles_jakarta,Raffles Jakarta,1844
+ssek-law-firm,SSEK Law Firm,1845
+berita-satu-media-holdings,BeritaSatu,1846
+beckers-group,Beckers Group,1847
+technicoflor-parfums,TechnicoFlor Parfums,1848
+pt-lambang-azas-mulia,PT Lambang Azas Mulia,1849
+phoenixcontactsea,Phoenix Contact (SEA),1850
+pt-mandala-karya-prima,PT Mandala Karya Prima (Mandiri Contractor),1851
+elitery,Elitery,1852
+intermoor,Intermoor,1853
+astra-isuzu,PT Astra International Tbk - Isuzu Sales Operation,1854
+soursallygroup,Sour Sally Group,1855
+pt-bank-capital-indonesia-tbk,PT Bank Capital Indonesia Tbk,1856
+rapidtechid,PT Rapid Teknologi Indonesia,1857
+b2be,B2BE,1858
+colearnid,CoLearn,1859
+tdk-electronics-batam,PT TDK ELECTRONICS INDONESIA,1860
+rotarex,Rotarex,1861
+aeon-indonesia-pt,"AEON INDONESIA, PT",1862
+outsite,Outsite,1863
+rollover-reaction,DALEA KREASI NADISANTI,1864
+6dtechnologies,6D Technologies,1865
+elitezindonesia,Elitez Indonesia,1866
+four-hands,Four Hands,1867
+tranglo,Tranglo,1868
+pt-bali-towerindo-sentra-tbk,"PT. Bali Towerindo Sentra Tbk,",1869
+rudolf,RUDOLF,1870
+pt-pupuk-sriwidjaja-palembang,PT Pupuk Sriwidjaja Palembang,1871
+sco-tokoparts,Tokoparts,1872
+pt-tigaraksa-satria-tbk,PT Tigaraksa Satria Tbk,1873
+bina-karya-prima-group,Bina Karya Prima Group,1874
+eatigo,eatigo,1875
+mightyhive,MightyHive,1876
+pt-cotg-sukses-makmur,COTG INDONESIA (7COSIA),1877
+themuliabali,"The Mulia, Mulia Resort & Villas - Nusa Dua, Bali",1878
+wavinindonesia,"Wavin Indonesia, an Orbia business",1879
+asuransi-brilife,PT Asuransi BRI Life,1880
+nativex,Nativex,1881
+modernland,"PT. Modernland Realty, Tbk",1882
+sigmatechnology,SIGMATECH,1883
+gotionindonesia,Gotion High-Tech Indonesia,1884
+manulife-indonesia-pt-asuransi-jiwa-manulife-indonesia,Manulife Indonesia (PT Asuransi Jiwa Manulife Indonesia),1885
+pt-pelayaran-kartika-samudra-adijaya,PT. Pelayaran Kartika Samudra Adijaya,1886
+pt-k24-indonesia,PT K-24 INDONESIA OFFICIAL,1887
+verihubs,Verihubs,1888
+mindo-education,Mindo Education,1889
+pertamina-internasional-ep-piep-,Pertamina Internasional EP,1890
+pt-tatamulia-nusantara-indah,PT Tatamulia Nusantara Indah,1891
+pt-berkat-anugerah-sejahtera,PT Berkat Anugerah Sejahtera,1892
+pt.-mandala-multifinance-tbk,PT. Mandala Multifinance Tbk,1893
+ogilvyindonesia,Ogilvy Indonesia,1894
+echez-group-latam,Echez Group,1895
+inmagine-group,INMAGINE (123RF),1896
+pertaminahuluenergi,PT Pertamina Hulu Energi,1897
+collectiusgroup,Collectius,1898
+permatagroup,Permata Group,1899
+pt-lintas-bahari-nusantara,PT. Lintas Bahari Nusantara,1900
+pt-triguna-internusa-pratama,PT Triguna Internusa Pratama,1901
+elevenia,elevenia,1902
+a-job-thing,A Job Thing,1903
+the-binary-holdings,The Binary Holdings,1904
+pt-kilang-pertamina-internasional,PT Kilang Pertamina Internasional,1905
+dsi-underground-group,DSI Underground Group (acquired by Sandvik),1906
+pulcra-chemicals-group,Pulcra Chemicals Group,1907
+focussoftnet,Focus Softnet,1908
+tribhakti-inspektama,PT. Tribhakti Inspektama,1909
+vidadigitalid,VIDA Digital Identity,1910
+david-brown-santasalo,David Brown Santasalo,1911
+dhikamentari-pt-,"DHIKAMENTARI PT,",1912
+audydentalclinic,Audy Dental Clinic,1913
+chope,Chope,1914
+four-seasons-hotel-jakarta,Four Seasons Hotel Jakarta,1915
+greenpark-digital,Greenpark,1916
+wall-street-english-indonesia,Wall Street English Indonesia,1917
+crebos-international,"Crebos | Software, Design, AI & Automation",1918
+cetco-energy-services,CETCO ENERGY SERVICES,1919
+dayalima-recruitment,Dayalima Recruitment,1920
+bvarta,Bhumi Varta Technology,1921
+wagely,wagely,1922
+myrobinid,MyRobin.ID,1923
+programmer-zaman-now,Programmer Zaman Now,1924
+ptgunungrajapaksitbk,PT Gunung Raja Paksi Tbk,1925
+hbtlaw,Hiswara Bunjamin & Tandjung,1926
+indonesian-institute-of-sciences,Indonesian Institute of Sciences (LIPI),1927
+pt.-kontak-perkasa-futures,PT. Kontak Perkasa Futures,1928
+archiindonesia,PT Archi Indonesia Tbk,1929
+makarim-&-taira-s.,Makarim & Taira S.,1930
+innitycorp,Innity,1931
+kobexofficial,PT Kobexindo Tractors Tbk,1932
+pt-borneo-pasifik-global,PT. Borneo Pasifik Global,1933
+md-entertainment,MD ENTERTAINMENT,1934
+yanoljacloudsolution,Yanolja Cloud Solution,1935
+secondmuse,SecondMuse,1936
+emeco-group,Emeco Group,1937
+hwi-amemberofcalderys,HarbisonWalker International,1938
+aviareps-group,AVIAREPS Group,1939
+ciputra-citraraya-group,Ciputra - CitraRaya Group,1940
+bukuwarung,BukuWarung,1941
+giorgetti-spa,Giorgetti,1942
+adhipersadaproperti,PT. Adhi Persada Properti,1943
+pajakitumudah,Pajak Itu Mudah,1944
+eratani,Eratani,1945
+gujarat-state-petroleum-corporation-ltd,Gujarat State Petroleum Corporation Ltd,1946
+pt-good-sale-tech,PT Good Sale Tech,1947
+ddtc,DDTC,1948
+redhill-asia,Redhill,1949
+whizzup,Whizzup,1950
+nikel-tech,Nikel,1951
+peaktew,PeakTew,1952
+nusatalent,NusaTalent,1953
+sumber-energi-pangan,PT Sumber Energi Pangan,1954
+pt-patria-maritim-perkasa,PT. Patria Maritim Perkasa,1955
+pt-eagle-high-plantations,PT Eagle High Plantations Tbk,1956
+riliv,Riliv,1957
+total-ebiz-solutions-pte-ltd,Total eBiz Solutions,1958
+pt-finusolprima-farma-internasional,PT Finusolprima Farma Internasional (a Kalbe Company),1959
+dotcominfoway,Dot Com Infoway,1960
+pt-excelso-multirasa-kapal-api-group,PT Excelso Multi Rasa (Kapal Api Global Group),1961
+finexusgroup,FINEXUS Group,1962
+shl-indonesia,SHL Indonesia,1963
+orbiz-borwitaindah,ORBIZ - PT. Borwita Indah,1964
+gaintheory,Gain Theory,1965
+laku6.com,Laku6.com,1966
+tjufoo,Tjufoo,1967
+talentsearchrecruitment,Talent Search Recruitment - Indonesia,1968
+utpepatria,PT United Tractors Pandu Engineering,1969
+pt-essaindustries-indonesia-tbk,PT ESSA Industries Indonesia Tbk.,1970
+pt-anabatic-technologies-tbk,PT Anabatic Technologies Tbk,1971
+googlecloud-gcsb,Google Cloud Skills Boost,1972
+altradsparrows,Altrad Sparrows,1973
+bukaka,PT. Bukaka Teknik Utama Tbk,1974
+fr--meyer's-sohn-gmbh-&-co-kg,Fr. Meyer's Sohn | FMS,1975
+eatsagala,Sagala,1976
+bisnis-indonesia-daily,Bisnis Indonesia Group,1977
+giz-indonesia-asean,GIZ Indonesia & ASEAN,1978
+human-capital-university1,HUMAN CAPITAL UNIVERSITY,1979
+artajasa-pembayaran-elektronis,Artajasa Pembayaran Elektronis,1980
+altrad-sparrows,Sparrows Group,1981
+wahana-artha-group,Wahana Artha Group,1982
+bakingworld,BakingWorld.id,1983
+unglobalpulse,United Nations Global Pulse,1984
+pt-lotte-chemical-titan-nusantara,PT Lotte Chemical Titan Nusantara,1985
