@@ -1,30 +1,34 @@
-# Quick Start Guide
+# ⚡ Panduan Cepat (Quickstart)
 
-## Menjalankan Aplikasi
+## Menjalankan Aplikasi Lokal
 
-1. **Aktifkan virtual environment:**
+### 1. Jalankan via Script 1-Klik (Windows)
+Cukup double-click atau jalankan melalui PowerShell:
 ```powershell
-.\venv\Scripts\Activate.ps1
+.\run_app.bat
 ```
 
-2. **Jalankan aplikasi:**
+### 2. Jalankan Manual via Dua Terminal
+
+**Terminal 1 - FastAPI Backend:**
 ```powershell
-streamlit run streamlit_app.py
+python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
 ```
+Akses Swagger Docs: `http://localhost:8000/docs`
 
-3. **Buka browser** di `http://localhost:8501`
-
-## Troubleshooting
-
-Jika ada error saat mengaktifkan venv:
+**Terminal 2 - Frontend React Vite:**
 ```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+cd frontend
+npm run dev
 ```
+Akses Website: `http://localhost:5173`
 
-## Deploy ke Streamlit Cloud
+---
 
-1. Push ke GitHub (jangan lupa .gitignore untuk venv/)
-2. Pergi ke https://share.streamlit.io
-3. Connect repository dan deploy!
+## Deploy ke Vercel
 
-Lihat [README.md](README.md) untuk dokumentasi lengkap.
+1. Buka [https://vercel.com/new](https://vercel.com/new)
+2. Import repository GitHub ini.
+3. Tetapkan **Root Directory** ke `frontend` (atau biarkan default karena sudah ada root `vercel.json`).
+4. Klik **Deploy**!
+5. Masukkan URL backend FastAPI Anda pada modal Pengaturan (ikon Gear) di navbar.

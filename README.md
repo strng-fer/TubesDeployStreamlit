@@ -1,225 +1,171 @@
-# Company Similarity Search dengan LSTM Autoencoder
+# 🔍 Company Similarity Engine (FastAPI + React / Vercel)
 
-Aplikasi Streamlit untuk mencari perusahaan yang serupa menggunakan LSTM Autoencoder dan Cosine Similarity.
+Aplikasi web modern dan interaktif untuk mencari perusahaan yang serupa menggunakan arsitektur deep learning **LSTM Autoencoder** dan representasi vektor **256-dimensi** dengan **Cosine Similarity**. 
 
-## ✨ Fitur Utama
+Aplikasi ini telah dimodernisasi dari Streamlit menjadi arsitektur decoupled:
+- **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (High-performance Python REST API + OpenAPI Swagger Docs)
+- **Frontend:** [React + Vite](https://vitejs.dev/) dengan styling modern Vanilla CSS Glassmorphism, siap dideploy langsung ke **[Vercel](https://vercel.com/)**.
 
-- 🏢 **Cari dari Perusahaan yang Ada**: Pilih perusahaan dari database dan temukan yang serupa
-- ✍️ **Input Deskripsi Baru**: Masukkan deskripsi perusahaan dan sistem akan mencari perusahaan serupa
-- 📊 **Visualisasi Similarity Score**: Bar chart interaktif untuk melihat tingkat kemiripan
-- 📝 **Informasi Lengkap**: Menampilkan nama, company ID, dan deskripsi lengkap (about company)
+---
 
-## 📁 Struktur Project
+## ✨ Fitur-Fitur Utama
+
+1. **🏢 Pencarian dari Perusahaan yang Ada (Database Lookup)**
+   - Input autocomplete dengan debounce dan navigasi keyboard (Up/Down/Enter).
+   - Chip rekomendasi perusahaan populer (Colgate-Palmolive, Shell, Shopee, IBM, Siemens, Pertamina, dll).
+   - Slider Top-K interaktif (3 hingga 20 hasil).
+   - Hasil pencarian menampilkan rank badge emas/perak/perunggu, similarity meter progresif, kategori industri, dan ringkasan profil.
+
+2. **✍️ Analisis Deskripsi Baru (AI NLP Encoder)**
+   - Masukkan deskripsi bebas atau gunakan preset template industri (Technology, Energy, Fintech, FMCG).
+   - Live character counter dan word counter.
+   - Text diproses melalui Tokenizer, di-encode oleh LSTM Autoencoder menjadi embedding 256-D, lalu dicocokkan dengan seluruh database.
+
+3. **📊 Multi-View Hasil Pencarian**
+   - **Grid Card View:** Kartu interaktif dengan visual percentage meter dan tombol aksi.
+   - **Bar Chart View:** Visualisasi grafik batang dinamis perbandingan nilai cosine similarity.
+   - **Table View:** Format tabel ringkas dengan kolom terstruktur.
+
+4. **⚖️ Fitur Komparasi Side-by-Side (`CompareModal`)**
+   - Bandingkan profil perusahaan sumber vs perusahaan target secara langsung.
+   - Visualisasi persentase kecocokan dan analisis keselarasan kategori industri.
+
+5. **📥 Ekspor Data & Aksi Pivot**
+   - Ekspor hasil pencarian ke format **CSV** atau **JSON** dengan 1-klik.
+   - Tombol **"Cari Serupa"** pada tiap kartu untuk langsung menjadikan hasil tersebut sebagai kueri pencarian baru (*pivot search*).
+
+6. **🎨 Desain Modern & User-Friendly**
+   - Tema Gelap (*Dark Theme*) dengan efek Glassmorphism dan ambient lighting, serta toggle Tema Terang.
+   - Indikator koneksi API real-time dengan meter latensi (ms).
+   - Pop-up konfigurasi endpoint API langsung di UI.
+   - Efek perayaan partikel (*confetti burst*) saat pencarian berhasil.
+
+---
+
+## 📁 Struktur Direktori
 
 ```
 TubesDeployStreamlit/
-├── streamlit_app.py              # Aplikasi Streamlit utama
-├── requirements.txt               # Dependencies Python
-├── company_encoder.keras          # Model LSTM Autoencoder (format Keras 3)
-├── company_embeddings.npy         # Embeddings perusahaan (pre-computed)
-├── company_metadata.csv           # Metadata perusahaan (id, name, index)
-├── company_info.csv               # Dataset ringan (id, name, about)
-├── tokenizer.pkl                  # Tokenizer untuk preprocessing text
-├── prepare_lightweight_dataset.py # Script untuk membuat company_info.csv
-└── README.md                      # Dokumentasi ini
+├── backend/                         # Backend FastAPI
+│   ├── main.py                      # Server FastAPI & endpoint routing
+│   ├── ml_service.py                # Service loader model LSTM, embeddings, data
+│   ├── schemas.py                   # Model validasi Pydantic
+│   ├── test_api.py                  # Smoke test otomatis endpoint API
+│   └── __init__.py
+├── frontend/                        # Frontend React + Vite (Vercel-Ready)
+│   ├── src/
+│   │   ├── components/              # Komponen modular UI (Navbar, Cards, Modals, dll)
+│   │   ├── services/api.js          # Client API dengan auto-proxy & custom URL
+│   │   ├── App.jsx                  # Dashboard aplikasi utama
+│   │   └── index.css                # Sistem desain Vanilla CSS modern & tokens
+│   ├── vercel.json                  # Konfigurasi routing Vercel SPA
+│   ├── vite.config.js               # Proxy otomatis ke backend localhost:8000
+│   └── package.json
+├── company_encoder.keras            # Model LSTM Autoencoder (Keras 3)
+├── company_embeddings.npy           # Pre-computed vector embeddings (1,986 x 256)
+├── company_metadata.csv             # Metadata perusahaan (id, name, embedding_index)
+├── company_info.csv                 # Dataset informasi profil perusahaan (id, name, about)
+├── tokenizer.pkl                    # Keras text tokenizer (vocab ~19,851)
+├── requirements.txt                 # Dependencies Python (FastAPI, Uvicorn, TensorFlow, dll)
+├── run_app.bat                      # Script 1-klik menjalankan Backend & Frontend di Windows
+├── vercel.json                      # Root configuration untuk import repository Vercel
+└── README.md
 ```
 
-## 🚀 Setup Virtual Environment (venv)
+---
 
-### 1. Buat Virtual Environment
+## 🚀 Panduan Menjalankan Secara Lokal
 
-```powershell
-# Di direktori project
-python -m venv venv
-```
+### 1. Prasyarat
+- Python 3.10 - 3.12
+- Node.js 18+ dan npm
 
-### 2. Aktifkan Virtual Environment
-
-```powershell
-# Windows PowerShell
-.\venv\Scripts\Activate.ps1
-
-# Jika ada error execution policy, jalankan:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
-### 3. Install Dependencies
-
+### 2. Install Dependencies Python
 ```powershell
 pip install -r requirements.txt
 ```
+> **Catatan:** Pastikan menggunakan `numpy<2` (sudah diatur di `requirements.txt`) agar kompatibel dengan TensorFlow 2.17.
 
-## 💻 Menjalankan Aplikasi Lokal
-
-### Persiapan Dataset (Pertama Kali)
-
-Jika belum memiliki `company_info.csv`, jalankan script untuk membuat dataset ringan:
-
+### 3. Install Dependencies Frontend
 ```powershell
-python prepare_lightweight_dataset.py
+cd frontend
+npm install
+cd ..
 ```
 
-Script ini akan:
-- Membaca `fix_dataset2.csv` (file besar 50MB+)
-- Mengekstrak kolom yang diperlukan: `company_id`, `name`, `about`
-- Membuat file ringan `company_info.csv` (~1728 perusahaan)
+### 4. Menjalankan Aplikasi
 
-### Menjalankan Aplikasi
-
-Setelah virtual environment aktif dan dependencies terinstall:
-
+#### Cara 1: Menggunakan Script Otomatis (Windows)
+Cukup jalankan file:
 ```powershell
-streamlit run streamlit_app.py
+.\run_app.bat
 ```
+Script ini akan otomatis membuka terminal backend FastAPI dan terminal frontend Vite.
 
-Aplikasi akan terbuka di browser pada `http://localhost:8501`
+#### Cara 2: Menjalankan Secara Manual
 
-### Menggunakan Aplikasi
-
-**Tab 1: 🏢 Cari dari Perusahaan yang Ada**
-1. Pilih perusahaan dari dropdown
-2. Atur jumlah hasil yang diinginkan (3-20)
-3. Klik "🔍 Cari Perusahaan Serupa"
-4. Lihat hasil dengan similarity score dan deskripsi lengkap
-
-**Tab 2: ✍️ Input Deskripsi Baru**
-1. Masukkan deskripsi perusahaan di text area
-2. Atur jumlah hasil yang diinginkan (3-20)
-3. Klik "🔍 Cari Perusahaan Serupa"
-4. Sistem akan encode text dan mencari perusahaan serupa
-
-## ☁️ Deploy ke Streamlit Cloud
-
-### Persiapan
-
-1. **Push ke GitHub Repository**
-   - Buat repository baru di GitHub
-   - Push semua file kecuali `venv/` (tambahkan ke `.gitignore`)
-
+**Terminal 1 (Backend FastAPI):**
 ```powershell
-# Buat .gitignore
-echo "venv/" > .gitignore
-echo "__pycache__/" >> .gitignore
-echo "*.pyc" >> .gitignore
-
-# Initialize git (jika belum)
-git init
-git add .
-git commit -m "Initial commit: Company similarity search app"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPO_NAME.git
-git push -u origin main
+python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
 ```
+- Swagger API Docs aktif di: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-### Deploy ke Streamlit Cloud
-
-1. Pergi ke [share.streamlit.io](https://share.streamlit.io)
-2. Login dengan GitHub
-3. Klik **"New app"**
-4. Pilih:
-   - **Repository:** Repository GitHub Anda
-   - **Branch:** main
-   - **Main file path:** streamlit_app.py
-5. Klik **"Deploy"**
-
-⚠️ **Catatan Penting:**
-- File `fix_dataset2.csv` sangat besar (>50MB), **JANGAN** di-upload ke GitHub
-- File `prepare_lightweight_dataset.py` tidak perlu di-upload (hanya untuk development)
-- **Pastikan file berikut ada di repository:**
-  - `streamlit_app.py`
-  - `requirements.txt`
-  - `company_encoder.keras` (format Keras 3, bukan .h5)
-  - `company_embeddings.npy`
-  - `company_metadata.csv`
-  - `company_info.csv` (dataset ringan)
-  - `tokenizer.pkl`
-
-## � Cara Kerja
-
-### Mode 1: Cari dari Perusahaan yang Ada
-1. **Load Embeddings:** Memuat embeddings yang sudah di-precompute
-2. **Load Metadata:** Memuat informasi perusahaan (id, name, index)
-3. **Load Company Info:** Memuat deskripsi lengkap perusahaan
-4. **Select Company:** User memilih perusahaan dari dropdown
-5. **Similarity Calculation:** Menghitung cosine similarity antara embeddings
-6. **Display Results:** Menampilkan top-K perusahaan paling mirip dengan:
-   - Nama perusahaan
-   - Company ID
-   - Deskripsi lengkap (about company)
-   - Similarity score
-
-### Mode 2: Input Deskripsi Baru
-1. **Load Model:** Memuat LSTM Autoencoder dari file `.keras`
-2. **Load Tokenizer:** Memuat tokenizer untuk preprocessing
-3. **Input Text:** User memasukkan deskripsi perusahaan
-4. **Text Processing:** 
-   - Tokenization menggunakan tokenizer
-   - Padding/truncating ke panjang sequence (default: 100)
-5. **Encoding:** Model LSTM Autoencoder encode text menjadi embedding vector
-6. **Similarity Search:** Hitung cosine similarity dengan semua embeddings
-7. **Display Results:** Tampilkan top-K perusahaan paling mirip
-
-### Teknologi yang Digunakan
-
-- **LSTM Autoencoder:** Model neural network untuk encoding text menjadi embeddings
-- **Cosine Similarity:** Metrik untuk mengukur kemiripan antar embeddings
-- **Streamlit:** Framework untuk web app interaktif
-- **TensorFlow/Keras:** Framework deep learning
-- **Pandas:** Manipulasi data
-- **NumPy:** Operasi array dan numerical computing
-
-## 🛠️ Troubleshooting
-
-### Error saat aktifkan venv
+**Terminal 2 (Frontend React Vite):**
 ```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+cd frontend
+npm run dev
+```
+- Buka browser di: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## ☁️ Panduan Deploy ke Vercel
+
+Frontend React telah disiapkan untuk deployment langsung ke **Vercel**:
+
+### Opsi A: Deploy via Vercel Dashboard (Rekomendasi)
+1. Push repository ini ke GitHub.
+2. Buka [vercel.com](https://vercel.com) dan klik **"Add New Project"**.
+3. Import repository GitHub Anda.
+4. Pada bagian **Root Directory**, pilih folder `frontend` (atau biarkan root, file `vercel.json` sudah dikonfigurasi).
+5. (Opsional) Tambahkan Environment Variable:
+   - `VITE_API_URL`: URL server FastAPI backend Anda (contoh: `https://company-similarity-api.onrender.com`).
+6. Klik **"Deploy"**!
+
+### Opsi B: Deploy via Vercel CLI
+```bash
+npm install -g vercel
+cd frontend
+vercel
 ```
 
-### Error loading model
-- Model menggunakan format `.keras` (Keras 3), bukan `.h5`
-- Pastikan file `company_encoder.keras` tersedia
-- Jika masih error, model optional - similarity search tetap berfungsi dengan embeddings
+---
 
-### File company_info.csv tidak ada
-Jalankan script untuk membuat dataset ringan:
-```powershell
-python prepare_lightweight_dataset.py
-```
+## 🌐 Menghubungkan Backend yang Di-host Cloud
 
-### "About Company" menampilkan "(Tidak ada deskripsi)"
-- Pastikan `company_info.csv` sudah dibuat dengan script di atas
-- File harus berisi kolom: `company_id`, `name`, `about`
+Karena model TensorFlow dan embedding membutuhkan server Python, backend FastAPI dapat di-deploy ke layanan gratis seperti:
+- **[Render.com](https://render.com/)** (Web Service: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`)
+- **[Railway.app](https://railway.app/)**
+- **[Hugging Face Spaces](https://huggingface.co/spaces)** (Docker / Gradio / FastAPI Space)
 
-### Aplikasi lambat saat input text baru
-- Fitur ini memerlukan model untuk encoding
-- Gunakan Tab 1 (Cari dari Perusahaan yang Ada) untuk pencarian lebih cepat
-- Tab 1 menggunakan embeddings pre-computed, tidak perlu model
+Setelah backend aktif di cloud:
+1. Buka website Vercel Anda.
+2. Klik tombol **ikon Gear (Settings)** di navbar pojok kanan atas.
+3. Masukkan URL backend Anda (misal `https://my-backend.onrender.com`) lalu klik **"Simpan & Hubungkan"**.
+4. Website akan langsung tersambung dan indikator berubah menjadi hijau **"FastAPI Connected"**!
 
-### Error loading files
-Pastikan struktur direktori benar dan semua file ada:
-```
-TubesDeployStreamlit/
-├── streamlit_app.py
-├── company_encoder.keras
-├── company_embeddings.npy
-├── company_metadata.csv
-├── company_info.csv
-└── tokenizer.pkl
-```
+---
 
-## 📦 Dependencies
+## 📡 Dokumentasi Endpoint REST API
 
-- **streamlit** >= 1.31.0: Framework web app
-- **tensorflow** >= 2.16.0: Load dan run model LSTM
-- **numpy** >= 1.24.3: Operasi array dan embeddings
-- **pandas** >= 2.1.4: Manipulasi data
-- **scikit-learn** >= 1.3.2: Cosine similarity calculation
-- **pickle**: Load tokenizer (built-in Python)
+| Endpoint | Method | Deskripsi |
+|---|---|---|
+| `/` | `GET` | Status umum API dan daftar rute |
+| `/api/health` | `GET` | Health check & ketersediaan model |
+| `/api/stats` | `GET` | Jumlah perusahaan, dimensi vektor, dan info model |
+| `/api/companies` | `GET` | Autocomplete pencarian nama perusahaan (`?q=...&limit=20`) |
+| `/api/companies/{name}` | `GET` | Profil detail dan deskripsi tentang perusahaan |
+| `/api/similarity/by-company` | `POST` | Cari kemiripan berdasarkan nama perusahaan sumber |
+| `/api/similarity/by-text` | `POST` | Cari kemiripan berdasarkan teks deskripsi baru via LSTM |
 
-## 👨‍💻 Development
-
-Untuk development lebih lanjut, edit file [streamlit_app.py](streamlit_app.py) sesuai kebutuhan.
-
-## 📝 License
-
-Project ini untuk keperluan akademik.
+Dokumentasi interaktif Swagger UI tersedia di `http://localhost:8000/docs`.
