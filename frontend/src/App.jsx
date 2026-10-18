@@ -6,7 +6,8 @@ import {
   BarChart3, 
   Table as TableIcon, 
   Download, 
-  AlertCircle
+  AlertCircle,
+  Network
 } from 'lucide-react';
 
 import Navbar from './components/Navbar';
@@ -18,6 +19,7 @@ import SimilarityChart from './components/SimilarityChart';
 import CompanyModal from './components/CompanyModal';
 import CompareModal from './components/CompareModal';
 import AnalyticsModal from './components/AnalyticsModal';
+import ClusterMap from './components/ClusterMap';
 import { api } from './services/api';
 
 export default function App() {
@@ -183,19 +185,36 @@ export default function App() {
                 <PenTool size={16} />
                 <span>Input Deskripsi Baru</span>
               </button>
+              <button
+                id="tab-btn-cluster"
+                className={`segmented-item ${activeTab === 'cluster' ? 'active' : ''}`}
+                onClick={() => setActiveTab('cluster')}
+              >
+                <Network size={16} />
+                <span>Peta Klaster Vektor (2D)</span>
+              </button>
             </div>
           </div>
 
           <div>
-            {activeTab === 'company' ? (
+            {activeTab === 'company' && (
               <CompanySearchTab 
                 onSearch={handleCompanySearch}
                 loading={loading}
               />
-            ) : (
+            )}
+            {activeTab === 'text' && (
               <TextSearchTab 
                 onSearch={handleTextSearch}
                 loading={loading}
+              />
+            )}
+            {activeTab === 'cluster' && (
+              <ClusterMap 
+                sourceCompany={resultsData?.source_company}
+                searchResults={resultsData?.results}
+                onSelectCompany={handlePivotSearch}
+                onViewDetail={(comp) => setModalCompany(comp)}
               />
             )}
           </div>
@@ -279,6 +298,14 @@ export default function App() {
                   >
                     <TableIcon size={15} />
                   </button>
+                  <button
+                    className={`segmented-item ${viewMode === 'map' ? 'active' : ''}`}
+                    onClick={() => setViewMode('map')}
+                    title="Peta Sebaran Klaster 2D"
+                    style={{ padding: '0.35rem 0.6rem' }}
+                  >
+                    <Network size={15} />
+                  </button>
                 </div>
 
                 <button
@@ -355,7 +382,17 @@ export default function App() {
               />
             )}
 
-            {/* View 2: Cards Grid */}
+            {/* View 2: 2D Cluster Map */}
+            {viewMode === 'map' && (
+              <ClusterMap 
+                sourceCompany={resultsData.source_company}
+                searchResults={resultsData.results}
+                onSelectCompany={handlePivotSearch}
+                onViewDetail={(comp) => setModalCompany(comp)}
+              />
+            )}
+
+            {/* View 3: Cards Grid */}
             {viewMode === 'grid' && (
               <div className="grid-cards">
                 {filteredResults.map((result) => (

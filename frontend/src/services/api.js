@@ -113,5 +113,13 @@ export const api = {
       })
     });
     return handleResponse(res);
+  },
+
+  async getClusteringData() {
+    const base = getBaseUrl();
+    const res = await fetch(`${base}/api/clustering`, {
+      headers: { 'Accept': 'application/json' }
+    });
+    return handleResponse(res);
   }
 };

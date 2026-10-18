@@ -21,24 +21,30 @@ Aplikasi ini telah dimodernisasi dari Streamlit menjadi arsitektur decoupled:
    - Live character counter dan word counter.
    - Text diproses melalui Tokenizer, di-encode oleh LSTM Autoencoder menjadi embedding 256-D, lalu dicocokkan dengan seluruh database.
 
-3. **📊 Multi-View Hasil Pencarian**
+3. **🗺️ Peta Klaster Vektor 2D (PCA & KMeans Interactive Map)**
+   - Proyeksi 1.986 vektor embedding ke bidang 2D interaktif menggunakan Principal Component Analysis (PCA).
+   - Pengelompokan 6 klaster industri KMeans (*Konsultasi & Karir*, *Mobilitas & Telekomunikasi*, *FMCG & Consumer*, *Perbankan Nasional*, *Energi & Industri*, *Enterprise Tech*).
+   - Filter interaktif per klaster, pencarian titik perusahaan, dan floating tooltip saat hover.
+   - Saat pencarian aktif, perusahaan acuan dan rekomendasi terdekat disorot dengan garis proyeksi vektor.
+
+4. **📊 Multi-View Hasil Pencarian**
    - **Grid Card View:** Kartu interaktif dengan visual percentage meter dan tombol aksi.
    - **Bar Chart View:** Visualisasi grafik batang dinamis perbandingan nilai cosine similarity.
    - **Table View:** Format tabel ringkas dengan kolom terstruktur.
+   - **Cluster Map View:** Melihat posisi perusahaan hasil pencarian langsung pada peta sebaran 2D.
 
-4. **⚖️ Fitur Komparasi Side-by-Side (`CompareModal`)**
+5. **⚖️ Fitur Komparasi Side-by-Side (`CompareModal`)**
    - Bandingkan profil perusahaan sumber vs perusahaan target secara langsung.
    - Visualisasi persentase kecocokan dan analisis keselarasan kategori industri.
 
-5. **📥 Ekspor Data & Aksi Pivot**
+6. **📥 Ekspor Data & Aksi Pivot**
    - Ekspor hasil pencarian ke format **CSV** atau **JSON** dengan 1-klik.
-   - Tombol **"Cari Serupa"** pada tiap kartu untuk langsung menjadikan hasil tersebut sebagai kueri pencarian baru (*pivot search*).
+   - Tombol **"Pilih Acuan"** pada tiap kartu untuk langsung menjadikan hasil tersebut sebagai kueri pencarian baru (*pivot search*).
 
-6. **🎨 Desain Modern & User-Friendly**
-   - Tema Gelap (*Dark Theme*) dengan efek Glassmorphism dan ambient lighting, serta toggle Tema Terang.
+7. **🎨 Desain Software Profesional**
+   - Antarmuka modern, tenang, dan berorientasi data tanpa ornamen klise (terinspirasi dari standar desain Linear dan Vercel).
    - Indikator koneksi API real-time dengan meter latensi (ms).
    - Pop-up konfigurasi endpoint API langsung di UI.
-   - Efek perayaan partikel (*confetti burst*) saat pencarian berhasil.
 
 ---
 
@@ -167,5 +173,6 @@ Setelah backend aktif di cloud:
 | `/api/companies/{name}` | `GET` | Profil detail dan deskripsi tentang perusahaan |
 | `/api/similarity/by-company` | `POST` | Cari kemiripan berdasarkan nama perusahaan sumber |
 | `/api/similarity/by-text` | `POST` | Cari kemiripan berdasarkan teks deskripsi baru via LSTM |
+| `/api/clustering` | `GET` | Data proyeksi 2D PCA dan penugasan klaster KMeans (1.986 titik) |
 
 Dokumentasi interaktif Swagger UI tersedia di `http://localhost:8000/docs`.

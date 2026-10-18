@@ -121,6 +121,12 @@ def find_similar_by_text(payload: SimilarityByTextRequest):
         "results": results
     }
 
+@app.get("/api/clustering", tags=["Clustering"])
+def get_clustering():
+    """Mendapatkan data proyeksi 2D PCA dan penugasan klaster KMeans untuk visualisasi scatter map"""
+    data = ml_service.get_clustering_data()
+    return data
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)

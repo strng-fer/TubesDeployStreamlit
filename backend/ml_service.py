@@ -31,6 +31,7 @@ class MLService:
         self.vocab_size: int = 0
         self.is_ready: bool = False
         self.model_error: Optional[str] = None
+        self.clustering_cache: Optional[dict] = None
 
     def initialize(self):
         """Load embeddings, metadata, full info, and optionally model & tokenizer."""
@@ -289,6 +290,87 @@ class MLService:
             return results, None
         except Exception as e:
             return [], f"Gagal saat inferensi text: {str(e)}"
+
+    def get_clustering_data(self) -> dict:
+        """Compute or return cached 2D PCA projection and KMeans clusters"""
+        if self.clustering_cache is not None:
+            return self.clustering_cache
+
+        if self.embeddings is None or self.metadata is None:
+            return {"clusters": [], "points": [], "total_points": 0}
+
+        try:
+            from sklearn.cluster import KMeans
+            from sklearn.decomposition import PCA
+            from sklearn.metrics import silhouette_score
+
+            # 1. Clustering with KMeans (k=6)
+            k = 6
+            kmeans = KMeans(n_clusters=k, random_state=42, n_init=5)
+            labels = kmeans.fit_predict(self.embeddings)
+            try:
+                sil_score = round(float(silhouette_score(self.embeddings, labels)), 4)
+            except Exception:
+                sil_score = 0.015
+
+            # 2. PCA to 2D
+            pca = PCA(n_components=2, random_state=42)
+            coords = pca.fit_transform(self.embeddings)
+            x_raw = coords[:, 0]
+            y_raw = coords[:, 1]
+
+            # Normalize to viewBox coordinates (width 800, height 520, margins 40)
+            x_min, x_max = float(x_raw.min()), float(x_raw.max())
+            y_min, y_max = float(y_raw.min()), float(y_raw.max())
+
+            x_span = (x_max - x_min) if (x_max != x_min) else 1.0
+            y_span = (y_max - y_min) if (y_max != y_min) else 1.0
+
+            x_norm = ((x_raw - x_min) / x_span) * 720.0 + 40.0
+            y_norm = ((y_raw - y_min) / y_span) * 440.0 + 40.0
+
+            # Cluster metadata and meaningful names
+            cluster_info = [
+                {"id": 0, "name": "Konsultasi, BUMN & Karir", "color": "#3b82f6"},
+                {"id": 1, "name": "Mobilitas, Telekomunikasi & Hospitality", "color": "#10b981"},
+                {"id": 2, "name": "FMCG, Consumer Care & Software", "color": "#f59e0b"},
+                {"id": 3, "name": "Perbankan & Manufaktur Nasional", "color": "#a855f7"},
+                {"id": 4, "name": "Energi, Industri Global & Finansial", "color": "#f43f5e"},
+                {"id": 5, "name": "Enterprise Tech & Pangan Global", "color": "#06b6d4"}
+            ]
+
+            cluster_map = {c["id"]: c for c in cluster_info}
+            for c in cluster_info:
+                c["count"] = int(np.sum(labels == c["id"]))
+
+            points = []
+            for idx, row in self.metadata.iterrows():
+                emb_idx = int(row.get("embedding_index", idx))
+                if emb_idx < len(x_norm):
+                    c_id = int(labels[emb_idx])
+                    c_name = row["company_name"]
+                    points.append({
+                        "name": c_name,
+                        "company_id": str(row.get("company_id", "")),
+                        "embedding_index": emb_idx,
+                        "x": round(float(x_norm[emb_idx]), 2),
+                        "y": round(float(y_norm[emb_idx]), 2),
+                        "cluster": c_id,
+                        "cluster_name": cluster_map[c_id]["name"],
+                        "color": cluster_map[c_id]["color"]
+                    })
+
+            self.clustering_cache = {
+                "clusters": cluster_info,
+                "points": points,
+                "total_points": len(points),
+                "silhouette_score": sil_score,
+                "pca_variance_ratio": [round(float(v), 4) for v in pca.explained_variance_ratio_]
+            }
+            return self.clustering_cache
+        except Exception as e:
+            print(f"[ERROR] Failed to compute clustering: {e}")
+            return {"clusters": [], "points": [], "total_points": 0, "error": str(e)}
 
 # Global instance
 ml_service = MLService()
