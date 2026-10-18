@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Building2, X, Copy, Check, Tag, Hash, FileText, Sparkles } from 'lucide-react';
+import { X, Copy, Check } from 'lucide-react';
 
 export default function CompanyModal({ company, onClose, onPivotSearch }) {
   const [copied, setCopied] = useState(false);
@@ -10,7 +10,7 @@ export default function CompanyModal({ company, onClose, onPivotSearch }) {
     const textToCopy = `Perusahaan: ${company.company_name || company.name}\nID: ${company.company_id || '-'}\nAbout: ${company.about || '-'}`;
     navigator.clipboard.writeText(textToCopy);
     setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
+    setTimeout(() => setCopied(false), 1200);
   };
 
   const name = company.company_name || company.name;
@@ -18,74 +18,54 @@ export default function CompanyModal({ company, onClose, onPivotSearch }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
-        {/* Modal Header */}
+        {/* Header */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.25rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div style={{
-              width: '44px',
-              height: '44px',
-              borderRadius: 'var(--radius-md)',
-              background: 'var(--grad-primary)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#fff'
-            }}>
-              <Building2 size={22} />
-            </div>
-            <div>
-              <h2 style={{ fontSize: '1.4rem', lineHeight: 1.2 }}>{name}</h2>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.25rem' }}>
-                {company.company_id && (
-                  <span className="badge badge-primary">ID: {company.company_id}</span>
-                )}
-                {company.similarity_score !== undefined && (
-                  <span className="badge badge-success">
-                    Similarity: {(company.similarity_score * 100).toFixed(1)}%
-                  </span>
-                )}
-              </div>
+          <div>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '0.25rem' }}>
+              {name}
+            </h2>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              {company.company_id && (
+                <span className="badge">ID: {company.company_id}</span>
+              )}
+              {company.similarity_score !== undefined && (
+                <span className="badge badge-success">
+                  Skor: {(company.similarity_score * 100).toFixed(1)}%
+                </span>
+              )}
             </div>
           </div>
 
           <button className="btn btn-ghost btn-icon" onClick={onClose}>
-            <X size={20} />
+            <X size={16} />
           </button>
         </div>
 
         {/* Tags */}
         {company.tags && company.tags.length > 0 && (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1.25rem' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1rem' }}>
             {company.tags.map((t, idx) => (
-              <span key={idx} className="badge badge-cyan" style={{ fontSize: '0.75rem' }}>
-                <Tag size={12} /> {t}
+              <span key={idx} className="badge" style={{ fontSize: '0.725rem' }}>
+                {t}
               </span>
             ))}
           </div>
         )}
 
-        {/* Full About Text */}
-        <div style={{ marginBottom: '1.5rem' }}>
-          <div style={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: '0.4rem', 
-            fontSize: '0.85rem', 
-            fontWeight: 600, 
-            color: 'var(--text-muted)', 
-            marginBottom: '0.6rem' 
-          }}>
-            <FileText size={16} /> Tentang Perusahaan (About Company):
+        {/* About Box */}
+        <div style={{ marginBottom: '1.25rem' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: 500, color: 'var(--text-muted)', marginBottom: '0.4rem' }}>
+            Deskripsi Profil
           </div>
           <div style={{
-            backgroundColor: 'var(--bg-tertiary)',
-            padding: '1.25rem',
+            backgroundColor: 'var(--bg-elevated)',
+            padding: '1rem',
             borderRadius: 'var(--radius-md)',
-            border: '1px solid var(--border-subtle)',
-            fontSize: '0.9rem',
-            lineHeight: 1.7,
+            border: '1px solid var(--border-default)',
+            fontSize: '0.85rem',
+            lineHeight: 1.6,
             color: 'var(--text-secondary)',
-            maxHeight: '320px',
+            maxHeight: '300px',
             overflowY: 'auto',
             whiteSpace: 'pre-wrap'
           }}>
@@ -93,19 +73,19 @@ export default function CompanyModal({ company, onClose, onPivotSearch }) {
           </div>
         </div>
 
-        {/* Footer Actions */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem' }}>
+        {/* Footer */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.5rem' }}>
           <button 
             className="btn btn-secondary" 
             onClick={handleCopy}
-            style={{ fontSize: '0.85rem' }}
+            style={{ fontSize: '0.8rem' }}
           >
-            {copied ? <Check size={16} color="var(--accent-emerald)" /> : <Copy size={16} />}
-            <span>{copied ? 'Tersalin ke Clipboard!' : 'Salin Info'}</span>
+            {copied ? <Check size={14} color="var(--emerald-text)" /> : <Copy size={14} />}
+            <span>{copied ? 'Tersalin' : 'Salin Teks'}</span>
           </button>
 
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <button className="btn btn-ghost" onClick={onClose}>
+          <div style={{ display: 'flex', gap: '0.4rem' }}>
+            <button className="btn btn-ghost" onClick={onClose} style={{ fontSize: '0.8rem' }}>
               Tutup
             </button>
             {onPivotSearch && (
@@ -115,8 +95,9 @@ export default function CompanyModal({ company, onClose, onPivotSearch }) {
                   onPivotSearch(name);
                   onClose();
                 }}
+                style={{ fontSize: '0.8rem' }}
               >
-                <Sparkles size={16} /> Cari Perusahaan Mirip Ini
+                Gunakan sebagai Acuan
               </button>
             )}
           </div>

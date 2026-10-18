@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, Building2, Sliders, ArrowRight, Loader2, Check } from 'lucide-react';
+import { Search, Check, Loader2, Sliders } from 'lucide-react';
 import { api } from '../services/api';
 
 const QUICK_COMPANIES = [
@@ -11,8 +11,7 @@ const QUICK_COMPANIES = [
   'PT Pertamina (Persero)',
   'Danone',
   'Michael Page',
-  'Accenture',
-  'Oracle'
+  'Accenture'
 ];
 
 export default function CompanySearchTab({ onSearch, loading }) {
@@ -25,11 +24,9 @@ export default function CompanySearchTab({ onSearch, loading }) {
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const dropdownRef = useRef(null);
 
-  // Debounced search for suggestions
   useEffect(() => {
     if (!query.trim()) {
-      // Load initial top companies for dropdown
-      api.searchCompanies('', 12)
+      api.searchCompanies('', 10)
         .then(res => setSuggestions(res))
         .catch(() => {});
       return;
@@ -37,19 +34,18 @@ export default function CompanySearchTab({ onSearch, loading }) {
 
     const timer = setTimeout(() => {
       setIsSearchingSuggestions(true);
-      api.searchCompanies(query, 12)
+      api.searchCompanies(query, 10)
         .then(res => {
           setSuggestions(res);
           setShowDropdown(true);
         })
         .catch(err => console.error(err))
         .finally(() => setIsSearchingSuggestions(false));
-    }, 200);
+    }, 180);
 
     return () => clearTimeout(timer);
   }, [query]);
 
-  // Click outside listener
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -96,31 +92,38 @@ export default function CompanySearchTab({ onSearch, loading }) {
   };
 
   return (
-    <div className="glass-panel" style={{ padding: '2rem', maxWidth: '850px', margin: '0 auto' }}>
+    <div className="surface-card" style={{ padding: '1.75rem', maxWidth: '780px', margin: '0 auto' }}>
       <form onSubmit={handleSubmit}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           
-          {/* Company Search Input with Autocomplete */}
+          {/* Search Input with Autocomplete */}
           <div style={{ position: 'relative' }} ref={dropdownRef}>
             <label style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              gap: '0.5rem', 
-              fontSize: '0.9rem', 
-              fontWeight: 600, 
-              marginBottom: '0.5rem',
-              color: 'var(--text-primary)'
+              display: 'block', 
+              fontSize: '0.85rem', 
+              fontWeight: 500, 
+              marginBottom: '0.4rem',
+              color: 'var(--text-secondary)'
             }}>
-              <Building2 size={18} className="text-gradient" />
-              Pilih / Cari Perusahaan Sumber:
+              Pilih Perusahaan Acuan
             </label>
 
             <div style={{ position: 'relative' }}>
+              <Search 
+                size={16} 
+                style={{ 
+                  position: 'absolute', 
+                  left: '0.85rem', 
+                  top: '50%', 
+                  transform: 'translateY(-50%)', 
+                  color: 'var(--text-muted)' 
+                }} 
+              />
               <input
                 id="company-search-input"
                 type="text"
-                className="input-field"
-                placeholder="Ketik nama perusahaan (cth. Colgate, Pertamina, Shell)..."
+                className="form-input"
+                placeholder="Cari nama perusahaan (cth. Colgate-Palmolive, Pertamina, Shell)..."
                 value={query || selectedCompany}
                 onChange={(e) => {
                   setQuery(e.target.value);
@@ -130,104 +133,93 @@ export default function CompanySearchTab({ onSearch, loading }) {
                 onFocus={() => setShowDropdown(true)}
                 onKeyDown={handleKeyDown}
                 autoComplete="off"
-                style={{ paddingLeft: '2.75rem' }}
-              />
-              <Search 
-                size={18} 
-                style={{ 
-                  position: 'absolute', 
-                  left: '1rem', 
-                  top: '50%', 
-                  transform: 'translateY(-50%)', 
-                  color: 'var(--text-muted)' 
-                }} 
+                style={{ paddingLeft: '2.4rem', paddingRight: isSearchingSuggestions ? '2.4rem' : '0.85rem' }}
               />
               {isSearchingSuggestions && (
                 <Loader2 
-                  size={18} 
-                  className="animate-spin" 
+                  size={16} 
                   style={{ 
                     position: 'absolute', 
-                    right: '1rem', 
+                    right: '0.85rem', 
                     top: '50%', 
                     transform: 'translateY(-50%)', 
-                    color: 'var(--primary-500)',
+                    color: 'var(--text-muted)',
                     animation: 'spin 1s linear infinite'
                   }} 
                 />
               )}
             </div>
 
-            {/* Dropdown Suggestions List */}
+            {/* Clean Autocomplete Popover */}
             {showDropdown && suggestions.length > 0 && (
               <div style={{
                 position: 'absolute',
                 top: '100%',
                 left: 0,
                 right: 0,
-                marginTop: '0.4rem',
-                backgroundColor: 'var(--bg-secondary)',
-                border: '1px solid var(--border-hover)',
+                marginTop: '0.35rem',
+                backgroundColor: 'var(--bg-surface)',
+                border: '1px solid var(--border-default)',
                 borderRadius: 'var(--radius-md)',
-                boxShadow: 'var(--shadow-lg)',
+                boxShadow: 'var(--shadow-overlay)',
                 maxHeight: '260px',
                 overflowY: 'auto',
                 zIndex: 60,
-                padding: '0.35rem'
+                padding: '0.25rem'
               }}>
                 {suggestions.map((item, idx) => (
                   <div
                     key={item.name + idx}
                     onClick={() => handleSelect(item.name)}
                     style={{
-                      padding: '0.65rem 1rem',
+                      padding: '0.55rem 0.75rem',
                       borderRadius: 'var(--radius-sm)',
                       cursor: 'pointer',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'space-between',
                       backgroundColor: idx === highlightedIndex || item.name === selectedCompany 
-                        ? 'var(--bg-tertiary)' 
+                        ? 'var(--bg-elevated)' 
                         : 'transparent',
-                      color: item.name === selectedCompany ? 'var(--text-accent)' : 'var(--text-primary)',
-                      transition: 'background-color 0.1s ease'
+                      color: 'var(--text-main)',
+                      fontSize: '0.875rem'
                     }}
                     onMouseEnter={() => setHighlightedIndex(idx)}
                   >
                     <div>
-                      <div style={{ fontWeight: 600, fontSize: '0.925rem' }}>{item.name}</div>
-                      {item.about && (
-                        <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '400px' }}>
-                          {item.about}
+                      <div style={{ fontWeight: 500 }}>{item.name}</div>
+                      {item.company_id && (
+                        <div style={{ fontSize: '0.725rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                          ID: {item.company_id}
                         </div>
                       )}
                     </div>
-                    {item.name === selectedCompany && <Check size={16} color="var(--primary-500)" />}
+                    {item.name === selectedCompany && <Check size={14} color="var(--text-main)" />}
                   </div>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Quick Select Chips */}
+          {/* Quick Filter Chips */}
           <div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
-              Rekomendasi Cepat:
-            </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+            <span style={{ fontSize: '0.775rem', color: 'var(--text-muted)', display: 'block', marginBottom: '0.35rem' }}>
+              Pilihan cepat:
+            </span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
               {QUICK_COMPANIES.map(company => (
                 <button
                   key={company}
                   type="button"
                   onClick={() => handleSelect(company)}
-                  className={`btn btn-secondary ${selectedCompany === company ? 'active' : ''}`}
+                  className="btn btn-secondary"
                   style={{
-                    padding: '0.3rem 0.75rem',
-                    fontSize: '0.8rem',
-                    borderRadius: 'var(--radius-pill)',
-                    backgroundColor: selectedCompany === company ? 'rgba(99, 102, 241, 0.25)' : 'var(--bg-glass-strong)',
-                    borderColor: selectedCompany === company ? 'var(--primary-500)' : 'var(--border-subtle)',
-                    color: selectedCompany === company ? 'var(--text-accent)' : 'var(--text-secondary)'
+                    padding: '0.25rem 0.6rem',
+                    fontSize: '0.75rem',
+                    borderRadius: 'var(--radius-sm)',
+                    backgroundColor: selectedCompany === company ? 'var(--bg-subtle)' : 'var(--bg-surface)',
+                    borderColor: selectedCompany === company ? 'var(--border-focus)' : 'var(--border-default)',
+                    color: selectedCompany === company ? 'var(--text-main)' : 'var(--text-secondary)'
                   }}
                 >
                   {company}
@@ -236,14 +228,14 @@ export default function CompanySearchTab({ onSearch, loading }) {
             </div>
           </div>
 
-          {/* Top-K Range Slider */}
-          <div className="slider-container">
-            <div className="slider-header">
-              <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 600 }}>
-                <Sliders size={16} /> Jumlah Rekomendasi (Top-K):
-              </span>
-              <span className="badge badge-cyan" style={{ fontSize: '0.85rem' }}>
-                {topK} Perusahaan Terdekat
+          {/* Top-K Slider */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+              <label style={{ fontSize: '0.8rem', fontWeight: 500, color: 'var(--text-secondary)' }}>
+                Batas Hasil Pencarian (Top-K)
+              </label>
+              <span className="badge">
+                {topK} Perusahaan
               </span>
             </div>
             <input
@@ -254,33 +246,25 @@ export default function CompanySearchTab({ onSearch, loading }) {
               step="1"
               value={topK}
               onChange={(e) => setTopK(e.target.value)}
-              className="custom-range"
+              className="clean-slider"
             />
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-              <span>3 (Spesifik)</span>
-              <span>10 (Standar)</span>
-              <span>20 (Komprehensif)</span>
-            </div>
           </div>
 
-          {/* Search Button */}
+          {/* Action Button */}
           <button
             id="company-search-submit-btn"
             type="submit"
             className="btn btn-primary"
             disabled={loading || (!selectedCompany && !query.trim())}
-            style={{ width: '100%', padding: '0.9rem', fontSize: '1rem', marginTop: '0.5rem' }}
+            style={{ padding: '0.7rem', marginTop: '0.25rem' }}
           >
             {loading ? (
               <>
-                <Loader2 size={20} className="animate-spin" />
-                <span>Menghitung Vektor Cosine Similarity...</span>
+                <Loader2 size={16} style={{ animation: 'spin 1s linear infinite' }} />
+                <span>Memproses Vektor...</span>
               </>
             ) : (
-              <>
-                <span>Cari Perusahaan Serupa</span>
-                <ArrowRight size={18} />
-              </>
+              <span>Cari Perusahaan Serupa</span>
             )}
           </button>
         </div>

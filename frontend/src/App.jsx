@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import confetti from 'canvas-confetti';
 import { 
   Building2, 
   PenTool, 
@@ -7,13 +6,7 @@ import {
   BarChart3, 
   Table as TableIcon, 
   Download, 
-  Filter, 
-  AlertTriangle,
-  RefreshCw,
-  Sparkles,
-  Search,
-  CheckCircle2,
-  ExternalLink
+  AlertCircle
 } from 'lucide-react';
 
 import Navbar from './components/Navbar';
@@ -72,20 +65,6 @@ export default function App() {
     refreshStatus();
   }, []);
 
-  // Trigger confetti on search complete
-  const triggerCelebration = () => {
-    try {
-      confetti({
-        particleCount: 45,
-        spread: 60,
-        origin: { y: 0.7 },
-        colors: ['#6366F1', '#06B6D4', '#10B981', '#A855F7']
-      });
-    } catch {
-      // ignore
-    }
-  };
-
   // Handle Search by Company
   const handleCompanySearch = async ({ company_name, top_k }) => {
     setLoading(true);
@@ -94,7 +73,6 @@ export default function App() {
       const data = await api.getSimilarByCompany(company_name, top_k);
       setResultsData(data);
       setFilterTag('all');
-      triggerCelebration();
     } catch (err) {
       setError(err.message || 'Gagal mencari kemiripan perusahaan.');
     } finally {
@@ -110,7 +88,6 @@ export default function App() {
       const data = await api.getSimilarByText(text, top_k);
       setResultsData(data);
       setFilterTag('all');
-      triggerCelebration();
     } catch (err) {
       setError(err.message || 'Gagal menganalisis kemiripan teks.');
     } finally {
@@ -118,14 +95,14 @@ export default function App() {
     }
   };
 
-  // Pivot search: click "Cari Serupa" from any result card
+  // Pivot search
   const handlePivotSearch = (companyName) => {
     setActiveTab('company');
     handleCompanySearch({ company_name: companyName, top_k: 5 });
-    window.scrollTo({ top: 380, behavior: 'smooth' });
+    window.scrollTo({ top: 220, behavior: 'smooth' });
   };
 
-  // Export results to JSON
+  // Export JSON
   const handleExportJSON = () => {
     if (!resultsData) return;
     const jsonStr = JSON.stringify(resultsData, null, 2);
@@ -138,7 +115,7 @@ export default function App() {
     URL.revokeObjectURL(url);
   };
 
-  // Export results to CSV
+  // Export CSV
   const handleExportCSV = () => {
     if (!resultsData || !resultsData.results) return;
     const headers = ['Rank', 'Perusahaan', 'Company ID', 'Similarity Score', 'Tags', 'About'];
@@ -160,7 +137,7 @@ export default function App() {
     URL.revokeObjectURL(url);
   };
 
-  // Filter tags calculation
+  // Filter tags
   const allResultTags = resultsData?.results 
     ? Array.from(new Set(resultsData.results.flatMap(r => r.tags || [])))
     : [];
@@ -182,35 +159,34 @@ export default function App() {
         onOpenAnalytics={() => setShowAnalytics(true)}
       />
 
-      {/* Main Content Area */}
-      <main style={{ flex: 1, paddingBottom: '5rem' }}>
-        {/* Hero Section */}
+      {/* Main Content */}
+      <main style={{ flex: 1, paddingBottom: '4rem' }}>
         <HeroBanner stats={stats} />
 
-        {/* Search Engine Controls Section */}
-        <section className="container" style={{ marginBottom: '3rem' }}>
-          {/* Tab Switcher Pills */}
-          <div className="tabs-container" style={{ marginBottom: '2rem' }}>
-            <button
-              id="tab-btn-company"
-              className={`tab-btn ${activeTab === 'company' ? 'active' : ''}`}
-              onClick={() => setActiveTab('company')}
-            >
-              <Building2 size={18} />
-              <span>Cari dari Perusahaan yang Ada</span>
-            </button>
-            <button
-              id="tab-btn-text"
-              className={`tab-btn ${activeTab === 'text' ? 'active' : ''}`}
-              onClick={() => setActiveTab('text')}
-            >
-              <PenTool size={18} />
-              <span>Input Deskripsi Baru (AI NLP)</span>
-            </button>
+        {/* Search Mode Switcher & Form */}
+        <section className="container" style={{ marginBottom: '2.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
+            <div className="segmented-control">
+              <button
+                id="tab-btn-company"
+                className={`segmented-item ${activeTab === 'company' ? 'active' : ''}`}
+                onClick={() => setActiveTab('company')}
+              >
+                <Building2 size={16} />
+                <span>Pilih dari Database</span>
+              </button>
+              <button
+                id="tab-btn-text"
+                className={`segmented-item ${activeTab === 'text' ? 'active' : ''}`}
+                onClick={() => setActiveTab('text')}
+              >
+                <PenTool size={16} />
+                <span>Input Deskripsi Baru</span>
+              </button>
+            </div>
           </div>
 
-          {/* Tab Contents */}
-          <div className="animate-fade-in">
+          <div>
             {activeTab === 'company' ? (
               <CompanySearchTab 
                 onSearch={handleCompanySearch}
@@ -225,136 +201,126 @@ export default function App() {
           </div>
         </section>
 
-        {/* Error Notification Alert */}
+        {/* Error Notification */}
         {error && (
-          <section className="container" style={{ marginBottom: '2rem' }}>
+          <section className="container" style={{ marginBottom: '1.5rem' }}>
             <div style={{
-              backgroundColor: 'rgba(244, 63, 94, 0.12)',
-              border: '1px solid var(--accent-rose)',
-              borderRadius: 'var(--radius-lg)',
-              padding: '1.25rem 1.5rem',
+              backgroundColor: 'rgba(239, 68, 68, 0.08)',
+              border: '1px solid rgba(239, 68, 68, 0.25)',
+              borderRadius: 'var(--radius-md)',
+              padding: '0.85rem 1.25rem',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
               gap: '1rem'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                <AlertTriangle size={24} color="var(--accent-rose)" />
-                <div>
-                  <h4 style={{ color: 'var(--accent-rose)', fontSize: '0.95rem' }}>Terjadi Kendala Pencarian</h4>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>{error}</p>
-                </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <AlertCircle size={18} color="#ef4444" />
+                <span style={{ fontSize: '0.875rem', color: '#ef4444' }}>{error}</span>
               </div>
-              <button className="btn btn-secondary" onClick={() => setError(null)} style={{ fontSize: '0.8rem' }}>
+              <button className="btn btn-ghost" onClick={() => setError(null)} style={{ fontSize: '0.75rem' }}>
                 Tutup
               </button>
             </div>
           </section>
         )}
 
-        {/* Results Presentation Section */}
+        {/* Results Section */}
         {resultsData && (
-          <section className="container animate-slide-up" style={{ marginTop: '1rem' }}>
-            {/* Results Header Toolbar */}
-            <div className="glass-panel" style={{ 
-              padding: '1.25rem 1.75rem', 
-              marginBottom: '1.5rem',
+          <section className="container">
+            {/* Toolbar */}
+            <div className="surface-card" style={{ 
+              padding: '0.85rem 1.25rem', 
+              marginBottom: '1.25rem',
               display: 'flex',
               flexWrap: 'wrap',
               alignItems: 'center',
               justifyContent: 'space-between',
-              gap: '1rem'
+              gap: '0.85rem'
             }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <h2 style={{ fontSize: '1.35rem' }}>
-                    Hasil Pencarian Perusahaan Serupa
+                  <h2 style={{ fontSize: '1.05rem', fontWeight: 600 }}>
+                    Hasil Pencarian
                   </h2>
-                  <span className="badge badge-success">
-                    {filteredResults.length} Ditemukan
+                  <span className="badge badge-accent">
+                    {filteredResults.length} Hasil
                   </span>
                 </div>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                  Kueri: <strong>{resultsData.query}</strong> | Mode: {resultsData.mode === 'company' ? 'Database Lookup' : 'LSTM Encoding'}
+                <span style={{ fontSize: '0.775rem', color: 'var(--text-muted)' }}>
+                  Acuan: <strong>{resultsData.query}</strong>
                 </span>
               </div>
 
               {/* View Switcher & Export */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  display: 'flex',
-                  backgroundColor: 'var(--bg-tertiary)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '0.2rem',
-                  border: '1px solid var(--border-subtle)'
-                }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <div className="segmented-control" style={{ padding: '0.15rem' }}>
                   <button
-                    className={`btn btn-ghost btn-icon ${viewMode === 'grid' ? 'active' : ''}`}
+                    className={`segmented-item ${viewMode === 'grid' ? 'active' : ''}`}
                     onClick={() => setViewMode('grid')}
-                    title="Tampilan Kartu Grid"
-                    style={{ backgroundColor: viewMode === 'grid' ? 'var(--bg-card-hover)' : 'transparent' }}
+                    title="Grid Kartu"
+                    style={{ padding: '0.35rem 0.6rem' }}
                   >
-                    <LayoutGrid size={18} />
+                    <LayoutGrid size={15} />
                   </button>
                   <button
-                    className={`btn btn-ghost btn-icon ${viewMode === 'chart' ? 'active' : ''}`}
+                    className={`segmented-item ${viewMode === 'chart' ? 'active' : ''}`}
                     onClick={() => setViewMode('chart')}
-                    title="Tampilan Grafik Batang Similarity"
-                    style={{ backgroundColor: viewMode === 'chart' ? 'var(--bg-card-hover)' : 'transparent' }}
+                    title="Grafik Batang"
+                    style={{ padding: '0.35rem 0.6rem' }}
                   >
-                    <BarChart3 size={18} />
+                    <BarChart3 size={15} />
                   </button>
                   <button
-                    className={`btn btn-ghost btn-icon ${viewMode === 'table' ? 'active' : ''}`}
+                    className={`segmented-item ${viewMode === 'table' ? 'active' : ''}`}
                     onClick={() => setViewMode('table')}
-                    title="Tampilan Tabel Detail"
-                    style={{ backgroundColor: viewMode === 'table' ? 'var(--bg-card-hover)' : 'transparent' }}
+                    title="Tabel"
+                    style={{ padding: '0.35rem 0.6rem' }}
                   >
-                    <TableIcon size={18} />
+                    <TableIcon size={15} />
                   </button>
                 </div>
 
-                {/* Export Dropdown */}
                 <button
                   className="btn btn-secondary"
                   onClick={handleExportCSV}
-                  title="Unduh hasil sebagai file CSV"
-                  style={{ fontSize: '0.85rem' }}
+                  title="Unduh file CSV"
+                  style={{ fontSize: '0.775rem', padding: '0.4rem 0.75rem' }}
                 >
-                  <Download size={16} /> Ekspor CSV
+                  <Download size={14} /> CSV
                 </button>
                 <button
                   className="btn btn-ghost"
                   onClick={handleExportJSON}
-                  title="Unduh hasil sebagai file JSON"
-                  style={{ fontSize: '0.85rem' }}
+                  title="Unduh file JSON"
+                  style={{ fontSize: '0.775rem', padding: '0.4rem 0.65rem' }}
                 >
                   JSON
                 </button>
               </div>
             </div>
 
-            {/* Filter by Tag Chips */}
+            {/* Filter Tags */}
             {allResultTags.length > 0 && (
               <div style={{ 
                 display: 'flex', 
                 alignItems: 'center', 
                 flexWrap: 'wrap', 
-                gap: '0.5rem', 
-                marginBottom: '1.5rem' 
+                gap: '0.35rem', 
+                marginBottom: '1.25rem' 
               }}>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  <Filter size={14} /> Filter Kategori:
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginRight: '0.25rem' }}>
+                  Filter Kategori:
                 </span>
                 <button
                   className={`btn btn-secondary ${filterTag === 'all' ? 'active' : ''}`}
                   onClick={() => setFilterTag('all')}
                   style={{
-                    padding: '0.25rem 0.75rem',
-                    fontSize: '0.75rem',
-                    borderRadius: 'var(--radius-pill)',
-                    backgroundColor: filterTag === 'all' ? 'var(--primary-600)' : 'var(--bg-tertiary)',
-                    color: filterTag === 'all' ? '#fff' : 'var(--text-secondary)'
+                    padding: '0.2rem 0.55rem',
+                    fontSize: '0.725rem',
+                    borderRadius: 'var(--radius-sm)',
+                    backgroundColor: filterTag === 'all' ? 'var(--text-main)' : 'var(--bg-surface)',
+                    color: filterTag === 'all' ? 'var(--bg-canvas)' : 'var(--text-secondary)'
                   }}
                 >
                   Semua ({resultsData.results.length})
@@ -367,11 +333,11 @@ export default function App() {
                       className={`btn btn-secondary ${filterTag === tag ? 'active' : ''}`}
                       onClick={() => setFilterTag(tag)}
                       style={{
-                        padding: '0.25rem 0.75rem',
-                        fontSize: '0.75rem',
-                        borderRadius: 'var(--radius-pill)',
-                        backgroundColor: filterTag === tag ? 'var(--primary-600)' : 'var(--bg-tertiary)',
-                        color: filterTag === tag ? '#fff' : 'var(--text-secondary)'
+                        padding: '0.2rem 0.55rem',
+                        fontSize: '0.725rem',
+                        borderRadius: 'var(--radius-sm)',
+                        backgroundColor: filterTag === tag ? 'var(--text-main)' : 'var(--bg-surface)',
+                        color: filterTag === tag ? 'var(--bg-canvas)' : 'var(--text-secondary)'
                       }}
                     >
                       {tag} ({count})
@@ -381,7 +347,7 @@ export default function App() {
               </div>
             )}
 
-            {/* View 1: Chart Mode */}
+            {/* View 1: Chart */}
             {viewMode === 'chart' && (
               <SimilarityChart 
                 results={filteredResults}
@@ -389,7 +355,7 @@ export default function App() {
               />
             )}
 
-            {/* View 2: Cards Grid Mode */}
+            {/* View 2: Cards Grid */}
             {viewMode === 'grid' && (
               <div className="grid-cards">
                 {filteredResults.map((result) => (
@@ -404,54 +370,54 @@ export default function App() {
               </div>
             )}
 
-            {/* View 3: Table Mode */}
+            {/* View 3: Table */}
             {viewMode === 'table' && (
-              <div className="glass-panel" style={{ overflowX: 'auto', padding: '1rem' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+              <div className="surface-card" style={{ overflowX: 'auto', padding: '0.5rem' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.85rem' }}>
                   <thead>
-                    <tr style={{ borderBottom: '1px solid var(--border-subtle)', color: 'var(--text-muted)' }}>
-                      <th style={{ padding: '0.75rem 1rem' }}>Rank</th>
-                      <th style={{ padding: '0.75rem 1rem' }}>Perusahaan</th>
-                      <th style={{ padding: '0.75rem 1rem' }}>Similarity Score</th>
-                      <th style={{ padding: '0.75rem 1rem' }}>Kategori / Industri</th>
-                      <th style={{ padding: '0.75rem 1rem' }}>Aksi</th>
+                    <tr style={{ borderBottom: '1px solid var(--border-default)', color: 'var(--text-muted)' }}>
+                      <th style={{ padding: '0.6rem 0.85rem', width: '50px' }}>#</th>
+                      <th style={{ padding: '0.6rem 0.85rem' }}>Perusahaan</th>
+                      <th style={{ padding: '0.6rem 0.85rem' }}>Cosine Similarity</th>
+                      <th style={{ padding: '0.6rem 0.85rem' }}>Kategori</th>
+                      <th style={{ padding: '0.6rem 0.85rem', textAlign: 'right' }}>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     {filteredResults.map((r) => (
                       <tr 
                         key={r.rank + r.company_name}
-                        style={{ borderBottom: '1px solid var(--border-subtle)' }}
+                        style={{ borderBottom: '1px solid var(--border-default)' }}
                       >
-                        <td style={{ padding: '0.75rem 1rem', fontFamily: 'var(--font-mono)', fontWeight: 700 }}>
-                          #{r.rank}
+                        <td style={{ padding: '0.6rem 0.85rem', fontFamily: 'var(--font-mono)' }}>
+                          {r.rank}
                         </td>
-                        <td style={{ padding: '0.75rem 1rem', fontWeight: 600 }}>
+                        <td style={{ padding: '0.6rem 0.85rem', fontWeight: 500 }}>
                           {r.company_name}
                           {r.company_id && (
-                            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                            <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
                               ID: {r.company_id}
                             </div>
                           )}
                         </td>
-                        <td style={{ padding: '0.75rem 1rem', fontFamily: 'var(--font-mono)', color: 'var(--accent-emerald)', fontWeight: 700 }}>
-                          {(r.similarity_score * 100).toFixed(2)}% ({r.similarity_score.toFixed(4)})
+                        <td style={{ padding: '0.6rem 0.85rem', fontFamily: 'var(--font-mono)' }}>
+                          {(r.similarity_score * 100).toFixed(2)}% <span style={{ color: 'var(--text-muted)' }}>({r.similarity_score.toFixed(4)})</span>
                         </td>
-                        <td style={{ padding: '0.75rem 1rem' }}>
-                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem' }}>
+                        <td style={{ padding: '0.6rem 0.85rem' }}>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.2rem' }}>
                             {(r.tags || []).map((t, idx) => (
-                              <span key={idx} className="badge badge-primary" style={{ fontSize: '0.7rem' }}>
+                              <span key={idx} className="badge" style={{ fontSize: '0.675rem' }}>
                                 {t}
                               </span>
                             ))}
                           </div>
                         </td>
-                        <td style={{ padding: '0.75rem 1rem' }}>
-                          <div style={{ display: 'flex', gap: '0.35rem' }}>
-                            <button className="btn btn-ghost" onClick={() => setModalCompany(r)} style={{ padding: '0.3rem 0.5rem', fontSize: '0.75rem' }}>
+                        <td style={{ padding: '0.6rem 0.85rem', textAlign: 'right' }}>
+                          <div style={{ display: 'inline-flex', gap: '0.25rem' }}>
+                            <button className="btn btn-ghost" onClick={() => setModalCompany(r)} style={{ padding: '0.25rem 0.5rem', fontSize: '0.725rem' }}>
                               Detail
                             </button>
-                            <button className="btn btn-ghost" onClick={() => setCompareTarget(r)} style={{ padding: '0.3rem 0.5rem', fontSize: '0.75rem' }}>
+                            <button className="btn btn-ghost" onClick={() => setCompareTarget(r)} style={{ padding: '0.25rem 0.5rem', fontSize: '0.725rem' }}>
                               Bandingkan
                             </button>
                           </div>
@@ -468,9 +434,9 @@ export default function App() {
 
       {/* Footer */}
       <footer style={{
-        backgroundColor: 'var(--bg-secondary)',
-        borderTop: '1px solid var(--border-subtle)',
-        padding: '2.5rem 1.5rem',
+        backgroundColor: 'var(--bg-canvas)',
+        borderTop: '1px solid var(--border-default)',
+        padding: '1.5rem',
         marginTop: 'auto'
       }}>
         <div className="container" style={{
@@ -478,23 +444,22 @@ export default function App() {
           flexWrap: 'wrap',
           alignItems: 'center',
           justifyContent: 'space-between',
-          gap: '1.5rem',
-          fontSize: '0.85rem',
+          gap: '1rem',
+          fontSize: '0.8rem',
           color: 'var(--text-muted)'
         }}>
           <div>
-            <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
-              Company Similarity Engine
-            </span> — Modern Full-Stack AI Application
-            <div>
-              Frontend siap dideploy di <strong>Vercel</strong> | Backend ditenagai oleh <strong>FastAPI & Keras</strong>
-            </div>
+            <span style={{ fontWeight: 500, color: 'var(--text-main)' }}>
+              Company Similarity Search
+            </span> · Model Vektor LSTM Autoencoder & Cosine Similarity
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <span className="badge badge-primary">FastAPI 0.143</span>
-            <span className="badge badge-cyan">React + Vite</span>
-            <span className="badge badge-success">LSTM 256-D</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <span>FastAPI Backend</span>
+            <span>·</span>
+            <span>React + Vite</span>
+            <span>·</span>
+            <span>Vercel Ready</span>
           </div>
         </div>
       </footer>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scale, X, ArrowRight, Building2, Tag, Percent } from 'lucide-react';
+import { X } from 'lucide-react';
 
 export default function CompareModal({ source, target, queryMode, queryText, onClose }) {
   if (!target) return null;
@@ -16,49 +16,45 @@ export default function CompareModal({ source, target, queryMode, queryText, onC
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '880px' }}>
+      <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '820px' }}>
         {/* Header */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-            <Scale size={24} className="text-gradient" />
-            <div>
-              <h2 style={{ fontSize: '1.35rem' }}>Komparasi Semantik Side-by-Side</h2>
-              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                Bandingkan keselarasan profil dan bidang industri antar entitas
-              </span>
-            </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+          <div>
+            <h2 style={{ fontSize: '1.2rem', fontWeight: 600 }}>Komparasi Semantik Profil</h2>
+            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+              Perbandingan entitas acuan vs entitas target
+            </span>
           </div>
           <button className="btn btn-ghost btn-icon" onClick={onClose}>
-            <X size={20} />
+            <X size={16} />
           </button>
         </div>
 
-        {/* Central Match Score Pill */}
+        {/* Minimal Score Banner */}
         {score && (
           <div style={{
-            background: 'var(--grad-card)',
-            border: '1px solid var(--border-hover)',
-            borderRadius: 'var(--radius-lg)',
-            padding: '1rem',
-            textAlign: 'center',
-            marginBottom: '1.5rem'
+            backgroundColor: 'var(--bg-elevated)',
+            border: '1px solid var(--border-default)',
+            borderRadius: 'var(--radius-md)',
+            padding: '0.85rem 1.25rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginBottom: '1.25rem'
           }}>
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Cosine Similarity Match
-            </span>
-            <div style={{ 
-              fontFamily: 'var(--font-mono)', 
-              fontSize: '2rem', 
-              fontWeight: 800, 
-              color: 'var(--text-accent)' 
-            }}>
-              {score}%
+            <div>
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Cosine Similarity Match</span>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '1.35rem', fontWeight: 600 }}>
+                {score}% <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>({target.similarity_score.toFixed(4)})</span>
+              </div>
             </div>
-            <div className="similarity-bar-bg" style={{ maxWidth: '320px', margin: '0.5rem auto 0 auto' }}>
-              <div 
-                className="similarity-bar-fill" 
-                style={{ width: `${score}%`, background: 'var(--grad-primary)' }} 
-              />
+            <div style={{ width: '180px' }}>
+              <div className="meter-track">
+                <div 
+                  className="meter-fill" 
+                  style={{ width: `${score}%`, backgroundColor: 'var(--accent)' }} 
+                />
+              </div>
             </div>
           </div>
         )}
@@ -66,32 +62,30 @@ export default function CompareModal({ source, target, queryMode, queryText, onC
         {/* Two Columns Grid */}
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-          gap: '1.5rem',
-          marginBottom: '1.5rem' 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', 
+          gap: '1rem',
+          marginBottom: '1.25rem' 
         }}>
           {/* Column 1: Source */}
           <div style={{
-            backgroundColor: 'var(--bg-tertiary)',
-            padding: '1.25rem',
+            backgroundColor: 'var(--bg-surface)',
+            padding: '1rem',
             borderRadius: 'var(--radius-md)',
-            border: '1px solid var(--border-subtle)'
+            border: '1px solid var(--border-default)'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
-              <span className="badge badge-primary">SUMBER (QUERY)</span>
-            </div>
-            <h3 style={{ fontSize: '1.15rem', marginBottom: '0.5rem' }}>{sourceName}</h3>
+            <span className="badge" style={{ marginBottom: '0.5rem' }}>ENTITAS ACUAN</span>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.4rem' }}>{sourceName}</h3>
             
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginBottom: '0.85rem' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem', marginBottom: '0.75rem' }}>
               {sourceTags.map((t, i) => (
-                <span key={i} className="badge badge-primary" style={{ fontSize: '0.7rem' }}>{t}</span>
+                <span key={i} className="badge" style={{ fontSize: '0.675rem' }}>{t}</span>
               ))}
             </div>
 
             <div style={{
-              fontSize: '0.85rem',
+              fontSize: '0.825rem',
               color: 'var(--text-secondary)',
-              lineHeight: 1.6,
+              lineHeight: 1.55,
               maxHeight: '220px',
               overflowY: 'auto'
             }}>
@@ -101,26 +95,24 @@ export default function CompareModal({ source, target, queryMode, queryText, onC
 
           {/* Column 2: Target */}
           <div style={{
-            backgroundColor: 'var(--bg-tertiary)',
-            padding: '1.25rem',
+            backgroundColor: 'var(--bg-surface)',
+            padding: '1rem',
             borderRadius: 'var(--radius-md)',
-            border: '1px solid var(--border-hover)'
+            border: '1px solid var(--border-default)'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
-              <span className="badge badge-cyan">PERUSAHAAN MIRIP (#{target.rank})</span>
-            </div>
-            <h3 style={{ fontSize: '1.15rem', marginBottom: '0.5rem' }}>{targetName}</h3>
+            <span className="badge" style={{ marginBottom: '0.5rem' }}>HASIL #{target.rank}</span>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.4rem' }}>{targetName}</h3>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginBottom: '0.85rem' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem', marginBottom: '0.75rem' }}>
               {targetTags.map((t, i) => (
-                <span key={i} className="badge badge-cyan" style={{ fontSize: '0.7rem' }}>{t}</span>
+                <span key={i} className="badge" style={{ fontSize: '0.675rem' }}>{t}</span>
               ))}
             </div>
 
             <div style={{
-              fontSize: '0.85rem',
+              fontSize: '0.825rem',
               color: 'var(--text-secondary)',
-              lineHeight: 1.6,
+              lineHeight: 1.55,
               maxHeight: '220px',
               overflowY: 'auto'
             }}>
@@ -131,8 +123,8 @@ export default function CompareModal({ source, target, queryMode, queryText, onC
 
         {/* Footer */}
         <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <button className="btn btn-secondary" onClick={onClose}>
-            Tutup Komparasi
+          <button className="btn btn-secondary" onClick={onClose} style={{ fontSize: '0.8rem' }}>
+            Tutup
           </button>
         </div>
       </div>
